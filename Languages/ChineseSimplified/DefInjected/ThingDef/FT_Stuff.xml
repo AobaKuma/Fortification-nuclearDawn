@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_DepletedUranium.label>贫铀</FT_DepletedUranium.label>
+  <FT_DepletedUranium.description>一种深色重金属,是浓缩铀的副产品.也是中寰世界战争中常见的装甲材料,其极高的密度和硬度使其非常适合制造刀片,装甲和穿甲弹药.</FT_DepletedUranium.description>
+
+  <FT_UraniumOutput.label>铀离心物</FT_UraniumOutput.label>
+  <FT_UraniumOutput.description>一种可以在车床上分离成浓缩铀和贫化铀的产品</FT_UraniumOutput.description>
+
+  <FT_EnrichedUranium.label>浓缩铀</FT_EnrichedUranium.label>
+  <FT_EnrichedUranium.description>一种高度浓缩的核武器级铀,可以制成核弹头或者核反应堆的燃料,是中寰世界的一种常规武器材料,爆炸威力上可与反粒子弹头相媲美. 注意:过多堆积该产物可能会造成危险__奈良重工.</FT_EnrichedUranium.description>
+
+</LanguageData>

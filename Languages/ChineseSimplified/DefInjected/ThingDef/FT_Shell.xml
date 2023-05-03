@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_Shell_NuclearWarhead.label>核弹</FT_Shell_NuclearWarhead.label>
+  <FT_Shell_NuclearWarhead.description>由精确计算的炸药和铀组成的工业技术结晶,常见于中寰世界与早期太空文明的战争机器使用,它会产生巨大的爆炸和电磁脉冲并点燃目标周围的易燃物体.即使不在杀伤范围内仍然会被冲击波和猛烈的闪光击晕. 可以从迫击炮发射或由大炮发射, 损坏时不会爆炸.../n/n 但请注意，核爆炸可能会对环境产生不可预测的短期负面影响__奈良重工.</FT_Shell_NuclearWarhead.description>
+
+  <FT_Bullet_NuclearWarhead.label>核弹</FT_Bullet_NuclearWarhead.label>
+
+</LanguageData>

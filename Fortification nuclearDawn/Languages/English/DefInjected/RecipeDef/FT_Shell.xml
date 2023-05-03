@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <FT_Make_NuclearWarhead.label>assemble nuclear warhead</FT_Make_NuclearWarhead.label>
-  <FT_Make_NuclearWarhead.description>assemble nuclear warhead by enriched uranium.</FT_Make_NuclearWarhead.description>
-  <FT_Make_NuclearWarhead.jobString>assembling warhead.</FT_Make_NuclearWarhead.jobString>
-
-
-</LanguageData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FTND_NuclearFlare.label>電磁脈衝</FTND_NuclearFlare.label>
+  <FTND_NuclearFlare.description>由於核爆炸產生了電磁脈衝,短期內會使電子設備停止工作.</FTND_NuclearFlare.description>
+  <FTND_NuclearFlare.endMessage>電磁脈衝的影響已經消退.</FTND_NuclearFlare.endMessage>
+  <FTND_NuclearFlare.letterText>發生了核電磁脈衝.\n\n強烈的電離輻射將關閉所有電氣設備.\n\n該影響在短期內應該會結束.</FTND_NuclearFlare.letterText>
+
+  <FTND_NuclearFallout.label>放射性落塵</FTND_NuclearFallout.label>
+  <FTND_NuclearFallout.description>一團核爆產生的放射性沉降物壟罩了整個地區.任何不在屋簷下的生物都會緩慢中毒.</FTND_NuclearFallout.description>
+  <FTND_NuclearFallout.endMessage>絕大部分的放射性落塵已經落下.</FTND_NuclearFallout.endMessage>
+  <FTND_NuclearFallout.letterText>一團核爆產生的放射性沉降物壟罩了整個地區.任何不在屋簷下的生物都會緩慢中毒.\n\n該影響在短期內應該會結束.</FTND_NuclearFallout.letterText>
+
+  <FTND_NuclearWinter.label>短期性核冬天</FTND_NuclearWinter.label>
+  <FTND_NuclearWinter.description>一場核爆炸產生的灰塵雲極大擾亂了氣候,將造成顯著的核冬天.</FTND_NuclearWinter.description>
+  <FTND_NuclearWinter.endMessage>絕大部分的落塵已經落下.</FTND_NuclearWinter.endMessage>
+  <FTND_NuclearWinter.letterText>一場核爆炸產生的灰塵雲極大擾亂了氣候,將造成顯著的核冬天.\n\n該影響在短期內應該會結束..</FTND_NuclearWinter.letterText>
+
+  <FTND_Flashstorm.label>電磁脈衝雷暴</FTND_Flashstorm.label>
+  <FTND_Flashstorm.description>一場因核爆產生的電磁雷暴正在肆虐區域.</FTND_Flashstorm.description>
+  <FTND_Flashstorm.endMessage>電磁脈衝雷暴已經停止</FTND_Flashstorm.endMessage>
+  <FTND_Flashstorm.letterText>一場因核爆產生的電磁雷暴正在肆虐區域.</FTND_Flashstorm.letterText>
+
+
+</LanguageData>

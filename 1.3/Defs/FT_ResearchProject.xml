@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>FT_NuclearDawn</defName>
+    <label>Data:Nuclear Dawn</label>
+    <description>[Data decryption completed]
+	The enrichment and separation of naturally-occurring uranium metal into high-concentration enriched uranium and depleted uranium...
+please note: the company is not responsible for the results of nuclear materials usage___Interstellar Industries Complex Nara</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>FT_ENIAC</li>
+    </prerequisites>
+  <researchViewX>10.00</researchViewX>
+  <researchViewY>2.20</researchViewY>
+    <requiredResearchFacilities>
+      <li>FT_ENIAC</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+
+</Defs>

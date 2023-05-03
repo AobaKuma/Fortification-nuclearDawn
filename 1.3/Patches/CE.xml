@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<CombatExtended.AmmoCategoryDef>
+							<defName>FT_Shell_Nuclear</defName>
+							<label>nuclear shell</label>
+							<labelShort>nuclear</labelShort>
+							<description>An artillery fired fission nuclear ordance.</description>
+						</CombatExtended.AmmoCategoryDef>
+					</value>
+				</li>
+
+				<!--155mm Nuke-->
+				
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_Shell_NuclearWarhead"]</xpath>
+					<value>
+						<ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
+							<defName>FT_Shell_NuclearWarhead</defName>
+							<label>155mm Howitzer shell (Nuclear)</label>
+							<description>
+								An industrial-tech warhead powered by consists of precisely calculated explosives and uranium.it creates a huge explosion,electromagnetic pulse and ignite flammable object around the target, even not within kill range you will still be stunned by the shockwave and violent flashes. Can be fired from mortars or launched by artillery. Won't explode when damaged..../n/n But be aware, a nuclear bomb explosion could have unpredictable negative effects on the environment./n/nPowerful yet highly controversial weapons. While they are widely used in some worlds, they are strictly banned in many other worlds.
+								Most industrial worlds prefer purchasing clean anti-grain warheads from core worlds over building nuclear warheads themselves under such excuse that the former is more  environment-friendly than the latter, but the truth is more than that: It is the need of arm dealers from the core worlds for a place to dump the mass-produced anti-grain weaponry that  drove the industrial worlds into mass purchasing such warheads, as they are pretty much impossible for the industrial worlds to reverse engineer, unlike crude nuclear warheads.
+							</description>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Ammo/155mmNuke</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<thingCategories>
+								<li>Ammo155mmHowitzerShells</li>
+							</thingCategories>
+							<stackLimit>25</stackLimit>
+							<tradeTags>
+								<li>CE_AutoEnableTrade_Sellable</li>
+								<li>CE_AutoEnableCrafting_TableMachining</li>
+							</tradeTags>
+							<statBases>
+								<MarketValue>2500</MarketValue>
+								<MaxHitPoints>300</MaxHitPoints>
+								<Mass>46.7</Mass>
+								<Bulk>47.67</Bulk>
+							</statBases>
+							<cookOffFlashScale>40</cookOffFlashScale>
+							<cookOffSound>Explosion_GiantBomb</cookOffSound>
+							<isMortarAmmo>true</isMortarAmmo>
+							<ammoClass>FT_Shell_Nuclear</ammoClass>
+							<thingSetMakerTags>
+								<li>RewardStandardHighFreq</li>
+							</thingSetMakerTags>
+							<detonateProjectile>FT_Bullet_NuclearWarhead_CEAmmoDetonation</detonateProjectile>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/RecipeDef[defName="FT_Make_NuclearWarhead"]/defName</xpath>
+					<value>
+						<defName>MakeFT_Shell_NuclearWarhead</defName>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="Base155mmHowitzerShell">
+							<defName>FT_Bullet_NuclearWarhead_CE</defName>
+							<label>155mm Howitzer shell (Nuclear)</label>
+							<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+							</graphicData>
+							<projectile Class="CombatExtended.ProjectilePropertiesCE">
+								<damageDef>Stun</damageDef>
+								<explosionDelay>3</explosionDelay>
+								<damageAmountBase>15</damageAmountBase>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0</armorPenetrationBlunt>
+								<explosionRadius>49.9</explosionRadius>
+								<flyOverhead>true</flyOverhead>
+								<explosionEffect>GiantExplosion</explosionEffect>
+								<soundExplode>Explosion_GiantBomb</soundExplode>
+							</projectile>
+							<comps>
+								<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+									<conditions>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>1</percent>
+											<duration>180000~360000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>5</percent>
+											<duration>15000~180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>25</percent>
+											<duration>2500~15000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>1</percent>
+											<duration>360000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>5</percent>
+											<duration>60000~180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>25</percent>
+											<duration>15000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearWinter</conditionDef>
+											<percent>1</percent>
+											<duration>360000~960000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearWinter</conditionDef>
+											<percent>5</percent>
+											<duration>60000~360000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_Flashstorm</conditionDef>
+											<percent>25</percent>
+											<duration>10000~30000</duration>
+										</li>
+									</conditions>
+								</li>
+								<li Class="Fortification.CompProperties_CompositeExplosion">
+									<compositeExplosions>
+										<li>
+											<!--核爆心-->
+											<countdown>1</countdown>
+											<radius>14.9</radius>
+											<damamgeDef>BombSuper</damamgeDef>
+											<amount>300</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>MortarBomb_Explode</explosionSound>
+										</li>
+										<li>
+											<countdown>1</countdown>
+											<radius>25.9</radius>
+											<damamgeDef>EMP</damamgeDef>
+											<amount>40</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>Explosion_EMP</explosionSound>
+										</li>
+										<li>
+											<countdown>2</countdown>
+											<radius>20.9</radius>
+											<damamgeDef>Flame</damamgeDef>
+											<amount>40</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>MortarBomb_Explode</explosionSound>
+											<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+											<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+											<preExplosionSpawnThingCount>50</preExplosionSpawnThingCount>
+											<postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+											<postExplosionSpawnChance>0.75</postExplosionSpawnChance>
+											<postExplosionSpawnThingCount>25</postExplosionSpawnThingCount>
+											<chanceToStartFire>0.25</chanceToStartFire>
+										</li>
+									</compositeExplosions>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="Base155mmHowitzerShell">
+							<defName>FT_Bullet_NuclearWarhead_CEAmmoDetonation</defName>
+							<label>155mm Howitzer shell (Nuclear)</label>
+							<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+							</graphicData>
+							<projectile Class="CombatExtended.ProjectilePropertiesCE">
+								<damageDef>Bomb</damageDef>
+								<damageAmountBase>156</damageAmountBase>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0</armorPenetrationBlunt>
+								<explosionRadius>2.5</explosionRadius>
+								<flyOverhead>true</flyOverhead>
+								<soundExplode>MortarBomb_Explode</soundExplode>
+								<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+							</projectile>
+							<comps>
+								<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+									<conditions>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>2</percent>
+											<duration>360000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>10</percent>
+											<duration>60000~180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>100</percent>
+											<duration>15000</duration>
+										</li>
+									</conditions>
+								</li>
+								<li Class="CombatExtended.CompProperties_Fragments">
+									<fragments>
+		 								<Fragment_Large>16</Fragment_Large>
+										<Fragment_Small>100</Fragment_Small>
+									</fragments>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
+					<value>
+						<FT_Shell_NuclearWarhead>FT_Bullet_NuclearWarhead_CE</FT_Shell_NuclearWarhead>
+					</value>
+				</li>
+
+				<!--105mm recoilless nuke-->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef Class="CombatExtended.AmmoDef" ParentName="105x607mmRCannonShellBase">
+							<defName>Ammo_105x607mmRCannonShell_FT_Nuke</defName>
+							<label>105x607mmR cannon shell (Nuclear)</label>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Ammo/105x607mmNuke</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>1000</MarketValue>
+							</statBases>
+							<ammoClass>FT_Shell_Nuclear</ammoClass>
+							<detonateProjectile>Bullet_60mmMortarShell_HE</detonateProjectile>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="Base105x607mmRCannonShell">
+							<defName>Projectile_105x607mmRCannonShell_FT_Nuke</defName>
+							<label>105x607mmR cannon shell (Nuclear)</label>
+							<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+								<shaderType>TransparentPostLight</shaderType>
+							</graphicData>
+							<projectile Class="CombatExtended.ProjectilePropertiesCE">
+								<damageDef>Stun</damageDef>
+								<explosionDelay>3</explosionDelay>
+								<damageAmountBase>15</damageAmountBase>
+								<armorPenetrationSharp>0</armorPenetrationSharp>
+								<armorPenetrationBlunt>0</armorPenetrationBlunt>
+								<explosionRadius>24.9</explosionRadius>
+								<explosionEffect>GiantExplosion</explosionEffect>
+								<soundExplode>Explosion_GiantBomb</soundExplode>
+							</projectile>
+							<comps>
+								<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+									<conditions>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>1</percent>
+											<duration>90000~180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>5</percent>
+											<duration>7500~90000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFlare</conditionDef>
+											<percent>25</percent>
+											<duration>1250~7500</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>1</percent>
+											<duration>180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>5</percent>
+											<duration>30000~90000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearFallout</conditionDef>
+											<percent>25</percent>
+											<duration>7500</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearWinter</conditionDef>
+											<percent>1</percent>
+											<duration>180000~480000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_NuclearWinter</conditionDef>
+											<percent>5</percent>
+											<duration>30000~180000</duration>
+										</li>
+										<li>
+											<conditionDef>FTND_Flashstorm</conditionDef>
+											<percent>25</percent>
+											<duration>5000~15000</duration>
+										</li>
+									</conditions>
+								</li>
+								<li Class="Fortification.CompProperties_CompositeExplosion">
+									<compositeExplosions>
+										<li>
+											<!--核爆心-->
+											<countdown>1</countdown>
+											<radius>5.9</radius>
+											<damamgeDef>BombSuper</damamgeDef>
+											<amount>300</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>MortarBomb_Explode</explosionSound>
+										</li>
+										<li>
+											<countdown>1</countdown>
+											<radius>14.9</radius>
+											<damamgeDef>EMP</damamgeDef>
+											<amount>40</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>Explosion_EMP</explosionSound>
+										</li>
+										<li>
+											<countdown>2</countdown>
+											<radius>10.9</radius>
+											<damamgeDef>Flame</damamgeDef>
+											<amount>40</amount>
+											<armorPenetration>2</armorPenetration>
+											<explosionSound>MortarBomb_Explode</explosionSound>
+											<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+											<preExplosionSpawnChance>0.25</preExplosionSpawnChance>
+											<preExplosionSpawnThingCount>50</preExplosionSpawnThingCount>
+											<postExplosionSpawnThingDef>Filth_Fuel</postExplosionSpawnThingDef>
+											<postExplosionSpawnChance>0.75</postExplosionSpawnChance>
+											<postExplosionSpawnThingCount>25</postExplosionSpawnThingCount>
+											<chanceToStartFire>0.25</chanceToStartFire>
+										</li>
+									</compositeExplosions>
+								</li>
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<RecipeDef>
+							<defName>MakeAmmo_105x607mmRCannonShell_FT_Nuke</defName>
+							<label>assemble nuclear warhead</label>
+							<description>assemble nuclear warhead by enriched uranium.</description>
+							<jobString>assembling warhead.</jobString>
+							<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_Machining</soundWorking>
+							<workAmount>8000</workAmount>
+							<recipeUsers>
+								<li>FT_TableLathe</li>
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>FT_EnrichedUranium</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>ComponentIndustrial</li>
+										</thingDefs>
+									</filter>
+									<count>2</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Steel</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>FT_EnrichedUranium</li>
+									<li>ComponentIndustrial</li>
+									<li>Steel</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<Ammo_105x607mmRCannonShell_FT_Nuke>3</Ammo_105x607mmRCannonShell_FT_Nuke>
+							</products>
+							<skillRequirements>
+								<Crafting>12</Crafting>
+							</skillRequirements>
+							<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
+							<workSkill>Crafting</workSkill>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_105x607mmRCannonShell"]/ammoTypes</xpath>
+					<value>
+						<Ammo_105x607mmRCannonShell_FT_Nuke>Projectile_105x607mmRCannonShell_FT_Nuke</Ammo_105x607mmRCannonShell_FT_Nuke>
+					</value>
+				</li>
+				
+				<!--Depleted Uranium-->
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases</xpath>
+					<value>
+						<Bulk>0.05</Bulk>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/categories</xpath>
+					<value>
+						<li>Metallic_Weapon</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Sharp</xpath>
+					<value>
+						<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Blunt</xpath>
+					<value>
+						<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Heat</xpath>
+					<value>
+						<StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/statFactors/MeleeWeapon_CooldownMultiplier</xpath>
+					<value>
+						<MeleeWeapon_CooldownMultiplier>1.33</MeleeWeapon_CooldownMultiplier>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/statFactors</xpath>
+					<value>
+						<Mass>2.45</Mass>
+						<MeleePenetrationFactor>1.6</MeleePenetrationFactor>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

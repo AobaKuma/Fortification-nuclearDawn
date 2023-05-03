@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs> 
+ <ThingDef ParentName="ResourceBase">
+    <defName>FT_DepletedUranium</defName>
+    <label>Depleted Uranium</label>
+    <description>A dark, heavy metal which is the by-product of Enriched Uranium. Also the shell material in common Mid-World Warfare, its extreme density and hardness make it good for making the blade, armor, and ammunition</description>
+    <graphicData>
+      <texPath>FT_NuclearDawn/FT_DepletedUranium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>8</MarketValue>
+      <Mass>3</Mass>
+      <StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.4</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.35</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>2.0</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.85</BluntDamageMultiplier>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <burnableByRecipe>true</burnableByRecipe>
+    <smeltable>true</smeltable>
+    <minRewardCount>100</minRewardCount>
+    <stuffProps>
+      <categories>
+        <li>Metallic</li>
+      </categories>
+      <appearance>Metal</appearance>
+      <commonality>0.005</commonality>
+      <color>(80,80,80)</color>
+      <constructEffect>ConstructMetal</constructEffect>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+      <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+      <statFactors>
+        <MaxHitPoints>3.0</MaxHitPoints>
+        <WorkToMake>3.0</WorkToMake>
+        <WorkToBuild>3.0</WorkToBuild>
+        <Beauty>0.45</Beauty>
+        <Flammability>0.0</Flammability>
+        <DoorOpenSpeed>0.05</DoorOpenSpeed>
+        <MeleeWeapon_CooldownMultiplier>1.2</MeleeWeapon_CooldownMultiplier>
+      </statFactors>
+    </stuffProps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_UraniumOutput</defName>
+    <label>Separation Uranium</label>
+    <description>a product that can seperate into enriched uranium and depleted uranium on the lathe</description>
+    <graphicData>
+      <texPath>FT_NuclearDawn/FT_SeparationUranium</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <Mass>1</Mass>
+      <Flammability>0.0</Flammability>
+    </statBases>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+  </ThingDef>
+  
+  <RecipeDef MayRequire="Dubwise.Rimatomics">
+    <defName>FT_Make_RA_SplitUranium</defName>
+    <label>Split uranium for Rimatomics company</label>
+    <description>Separate the Uranium into enriched uranium and depleted uranium with the standard for Rimatomics companies.</description>
+    <jobString>Spliting uranium.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>7500</workAmount>
+    <recipeUsers>
+      <li>FT_TableLathe</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_UraniumOutput</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FT_UraniumOutput</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Plutonium>1</Plutonium>
+      <DepletedUraniumPellets>24</DepletedUraniumPellets>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+	<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+  <RecipeDef>
+    <defName>FT_Make_SplitUranium</defName>
+    <label>Split uranium</label>
+    <description>Separate the Uranium into enriched uranium and depleted uranium.</description>
+    <jobString>Spliting uranium.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>5000</workAmount>
+    <recipeUsers>
+      <li>FT_TableLathe</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_UraniumOutput</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>FT_UraniumOutput</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <FT_EnrichedUranium>1</FT_EnrichedUranium>
+      <FT_DepletedUranium>24</FT_DepletedUranium>
+    </products>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+	<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_EnrichedUranium</defName>
+    <label>Enriched Uranium</label>
+    <description>a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead. Note: Please do not stack more than 10 in one place</description>
+    <graphicData>
+      <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>2</Mass>
+      <Flammability>0.0</Flammability>
+    </statBases>
+	<comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>10</heatPerSecond>
+      </li>
+	</comps>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>	

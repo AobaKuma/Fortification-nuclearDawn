@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<!--================移除便攜核彈======================-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial.NuclearDawn</modId>
+		<key>RemoveNuclearLauncher</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/ThingDef[defName="FTND_NukeLauncher"]</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<xpath>Defs/RecipeDef[defName="FTND_Make_NukeLauncher" or defName="FTND_Dismantle_NukeLauncher"]</xpath>
+					</li>
+				</operations>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	
+	<!--================削弱核彈======================-->
+	<Operation Class="XmlExtensions.OptionalPatch">
+		<modId>Aoba.Fortress.Industrial.NuclearDawn</modId>
+		<key>AdjustNuclearExplosion</key>
+		<defaultValue>false</defaultValue>
+		<caseTrue>
+			<Operation Class="PatchOperationSequence">
+				<operations>				
+					<li Class="PatchOperationFindMod">
+						<mods>
+							<li>Combat Extended</li>
+						</mods>
+						<match Class="PatchOperationSequence">
+							<operations>	
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[defName="Projectile_105x607mmRCannonShell_FT_Nuke" or defName="FT_Bullet_NuclearWarhead_CE"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+									<value>
+										<conditions>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>1</percent>
+												<duration>2000~3000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>5</percent>
+												<duration>1000~2000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>25</percent>
+												<duration>500~1000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>1</percent>
+												<duration>72000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>5</percent>
+												<duration>12000~36000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>25</percent>
+												<duration>3000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearWinter</conditionDef>
+												<percent>1</percent>
+												<duration>72000~192000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearWinter</conditionDef>
+												<percent>5</percent>
+												<duration>12000~72000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_Flashstorm</conditionDef>
+												<percent>25</percent>
+												<duration>2000~6000</duration>
+											</li>
+										</conditions>
+									</value>			
+								</li>								
+								<li Class="PatchOperationConditional">
+									<xpath>Defs/ThingDef[defName="Projectile_Rocket_FT_Nuke"]</xpath>
+									<match Class="PatchOperationReplace">
+										<xpath>Defs/ThingDef[defName="Projectile_Rocket_FT_Nuke"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+										<value>
+											<conditions>
+												<li>
+													<conditionDef>FTND_NuclearFlare</conditionDef>
+													<percent>1</percent>
+													<duration>2000~3000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearFlare</conditionDef>
+													<percent>5</percent>
+													<duration>1000~2000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearFlare</conditionDef>
+													<percent>25</percent>
+													<duration>500~1000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearFallout</conditionDef>
+													<percent>1</percent>
+													<duration>72000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearFallout</conditionDef>
+													<percent>5</percent>
+													<duration>12000~36000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearFallout</conditionDef>
+													<percent>25</percent>
+													<duration>3000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearWinter</conditionDef>
+													<percent>1</percent>
+													<duration>72000~192000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_NuclearWinter</conditionDef>
+													<percent>5</percent>
+													<duration>12000~72000</duration>
+												</li>
+												<li>
+													<conditionDef>FTND_Flashstorm</conditionDef>
+													<percent>25</percent>
+													<duration>2000~6000</duration>
+												</li>
+											</conditions>
+										</value>
+									</match>
+								</li>								
+							</operations>
+						</match>
+						<nomatch Class="PatchOperationSequence">
+							<operations>
+								<li Class="PatchOperationReplace">
+									<xpath>Defs/ThingDef[defName="FT_Bullet_NuclearWarhead"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+									<value>
+										<conditions>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>1</percent>
+												<duration>2000~3000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>5</percent>
+												<duration>1000~2000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFlare</conditionDef>
+												<percent>25</percent>
+												<duration>500~1000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>1</percent>
+												<duration>72000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>5</percent>
+												<duration>12000~36000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearFallout</conditionDef>
+												<percent>25</percent>
+												<duration>3000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearWinter</conditionDef>
+												<percent>1</percent>
+												<duration>72000~192000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_NuclearWinter</conditionDef>
+												<percent>5</percent>
+												<duration>12000~72000</duration>
+											</li>
+											<li>
+												<conditionDef>FTND_Flashstorm</conditionDef>
+												<percent>25</percent>
+												<duration>2000~6000</duration>
+											</li>
+										</conditions>
+									</value>
+								</li>
+							</operations>
+						</nomatch>
+					</li>	
+				</operations>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

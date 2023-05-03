@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_RTG.label>R.T.G.</FT_RTG.label>
+  <FT_RTG.description>放射性同位素热电发电机，在不需要额外燃料的情况下永远（相对的）产生电力。一种可以利用核技术知识生产的永恒电池.\n\n 请注意该装置在运作时会被动的产生废热.</FT_RTG.description>
+
+  <FT_Reactor.label>核能反应炉</FT_Reactor.label>
+  <FT_Reactor.description>针对远地区殖民地设计的全自动核裂变反应炉，虽然安全性与稳定性都非常的可靠但发电能力远远不如边缘核能公司设计的反应炉.\n\n 请注意该装置在运作时会被动的产生废热.</FT_Reactor.description>
+
+  <FT_Centrifuge.label>电磁型同位素分离器</FT_Centrifuge.label>
+  <FT_Centrifuge.description>需要来自整个殖民地电力来驱动的同位素质谱仪，使用电场加速粒子撞击和偏转，将天然铀提取为浓缩铀和副产物贫化铀.</FT_Centrifuge.description>
+
+</LanguageData>

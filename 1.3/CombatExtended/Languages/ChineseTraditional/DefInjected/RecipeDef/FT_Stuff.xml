@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_Make_RA_SplitUranium.label>分離鈾元素(邊緣核能)</FT_Make_RA_SplitUranium.label>
+  <FT_Make_RA_SplitUranium.description>以邊緣核能公司的標準將鈾元素分離為濃縮鈾與貧鈾.</FT_Make_RA_SplitUranium.description>
+  <FT_Make_RA_SplitUranium.jobString>分離鈾元素中.</FT_Make_RA_SplitUranium.jobString>
+
+  <FT_Make_SplitUranium.label>分離鈾元素</FT_Make_SplitUranium.label>
+  <FT_Make_SplitUranium.description>將鈾元素分離為濃縮鈾與貧鈾.</FT_Make_SplitUranium.description>
+  <FT_Make_SplitUranium.jobString>分離鈾元素中.</FT_Make_SplitUranium.jobString>
+
+
+</LanguageData>

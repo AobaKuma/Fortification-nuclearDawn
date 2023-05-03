@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FTND_Make_NukeLauncher.label>组装核弹发射器</FTND_Make_NukeLauncher.label>
+  <FTND_Make_NukeLauncher.description>组装一套单兵使用的无后座力核弹发射装置</FTND_Make_NukeLauncher.description>
+  <FTND_Make_NukeLauncher.jobString>打造核平世界...</FTND_Make_NukeLauncher.jobString>
+  
+  <FTND_NukeLauncher.label>无后座力核发射器</FTND_NukeLauncher.label>
+  <FTND_NukeLauncher.description>使用车床就能生产的一次性无后坐力发射器，设计用于发射代号为小胖子的 N-45型核弹。通常用于对付大量软目标或大型防御工事。 \n\n 作为一次性大规模杀伤性武器，使用不当可能会造成友军误击与环境污染，请小心使用.</FTND_NukeLauncher.description>
+
+</LanguageData>

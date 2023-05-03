@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AchievementsExpanded.AchievementDef>
+		<defName>FT_Nuclear</defName>
+		<label>The Nuclear Dawn</label>
+		<description>Build Centrifuge</description>
+		
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>FT_Centrifuge</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>FT_NuclearDawn/AchievementNuclear</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+
+ 	<AchievementsExpanded.AchievementDef>
+		<defName>FT_Atomicbomb</defName>
+		<label>Atomic bomb</label>
+		<description>this is not the first,but also won't be the last.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>FT_Shell_NuclearWarhead</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>FT_NuclearDawn/AchievementNuke</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	
+ 	<AchievementsExpanded.AchievementDef>
+		<defName>FT_AtomicbombPlus</defName>
+		<label>Nuclear warfare</label>
+		<description>wait are you going to start a nuclear war ?</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>FT_Shell_NuclearWarhead</def>
+			<count>100</count>
+		</tracker>
+		
+		<texPath>FT_NuclearDawn/AchievementNukePlus</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+
+
+</Defs>
