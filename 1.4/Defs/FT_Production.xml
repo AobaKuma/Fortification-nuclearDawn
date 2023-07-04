@@ -2,65 +2,7 @@
 
 <Defs>
 
-<!--
- <ThingDef ParentName="BuildingBase">
-    <defName>FT_NuclearContainer</defName>
-    <label>Nuclear container</label>
-    <description>a container that can place aside from the lathe to make it capable of process radioactive material.</description>
-    <graphicData>
-      <texPath>FT_NuclearDawn/NuclearContainer</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,3)</drawSize>
-      <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
-      </damageData>
-    </graphicData>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <staticSunShadowHeight>0.45</staticSunShadowHeight>
-    <fillPercent>0.5</fillPercent>
-    <canOverlapZones>false</canOverlapZones>
-    <pathCost>42</pathCost>
-    <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>3000</WorkToBuild>
-      <Mass>50</Mass>
-      <Flammability>0.25</Flammability>
-    </statBases>
-    <size>(2,1)</size>
-    <costList>
-      <Uranium>200</Uranium>
-    </costList>
-    <building>
-      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
-    </building>
-    <researchPrerequisites>
-      <li>FT_NuclearDawn</li>
-    </researchPrerequisites>
-    <designationCategory>Misc</designationCategory>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-    <thingCategories>
-      <li>BuildingsMisc</li>
-    </thingCategories>
-    <comps>
-      <li Class="CompProperties_Facility">
-        <statOffsets>
-          <WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
-        </statOffsets>
-        <maxSimultaneous>2</maxSimultaneous>
-      </li>
-    </comps>
-    <placeWorkers>
-      <li>PlaceWorker_ShowFacilitiesConnections</li>
-    </placeWorkers>
-  </ThingDef>
-  -->
-  
+  <!-- RTG -->
  <ThingDef ParentName="BuildingBase">
     <defName>FT_RTG</defName>
     <label>R.T.G.</label>
@@ -129,7 +71,7 @@
     </tradeTags>
   </ThingDef>
 
-  
+  <!-- 輕水堆 -->
  <ThingDef ParentName="BuildingBase">
     <defName>FT_Reactor</defName>
     <label>Nuclear Reactor</label>
@@ -213,7 +155,8 @@
 		</li>
     </comps>
   </ThingDef>
-
+  
+  <!-- 電磁離心機 -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_Centrifuge</defName>
 		<label>Calutron</label>
@@ -308,10 +251,9 @@
 				<cancelIngredientsDesc>IP_CancelIngredientsDesc</cancelIngredientsDesc>
 				<cancelIngredientsIcon>FT_NuclearDawn/FTND_Cancel</cancelIngredientsIcon> 
 
-				<noPowerDestroysProgress>false</noPowerDestroysProgress>
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
 
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
-
 			</li>
 		</comps>
 	</ThingDef>

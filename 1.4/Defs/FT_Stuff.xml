@@ -154,16 +154,15 @@
     <workSkill>Crafting</workSkill>
   </RecipeDef>
 
-  
   <ThingDef ParentName="ResourceBase">
     <defName>FT_EnrichedUranium</defName>
     <label>Enriched Uranium</label>
-    <description>a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead. Note: Please do not stack more than 10 in one place</description>
+    <description>a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead.</description>
     <graphicData>
       <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <tickerType>Normal</tickerType>
+    <tickerType>None</tickerType>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>10</stackLimit>
@@ -174,12 +173,31 @@
       <Mass>2</Mass>
       <Flammability>0.0</Flammability>
     </statBases>
-	<comps>
-      <li Class="CompProperties_HeatPusher">
-        <compClass>CompHeatPusherPowered</compClass>
-        <heatPerSecond>10</heatPerSecond>
-      </li>
-	</comps>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+  </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>FT_MOX</defName>
+    <label>MOX fuel</label>
+    <description>Mixed oxide fuel, commonly referred to as MOX fuel, is nuclear fuel that contains more than one oxide of fissile material, usually consisting of plutonium blended with natural uranium.</description>
+    <graphicData>
+      <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <tickerType>None</tickerType>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>10</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <Mass>2</Mass>
+      <Flammability>0.0</Flammability>
+    </statBases>
     <intricate>true</intricate>
     <thingCategories>
       <li>Manufactured</li>

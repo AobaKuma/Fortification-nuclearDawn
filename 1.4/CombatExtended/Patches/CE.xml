@@ -144,7 +144,6 @@
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Projectile_Rocket_FT_Nuke</defaultProjectile>
 						<warmupTime>2.1</warmupTime>
-						<forcedMissRadius>1</forcedMissRadius>
 						<range>48</range>
 						<minRange>20</minRange>
 						<burstShotCount>1</burstShotCount>

@@ -333,7 +333,46 @@
 		<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
-	
+
+	 <RecipeDef>
+		<defName>FT_Dismantle_NuclearWarhead_B</defName>
+		<label>dismantle 105mm nuclear warhead</label>
+		<description>dismantle 105mm nuclear warhead and restore peace to this terrible world...</description>
+		<jobString>dismantling warhead.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>8000</workAmount>
+		<recipeUsers>
+			<li>FT_TableLathe</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+				<thingDefs>
+					<li>Ammo_105x607mmRCannonShell_FT_Nuke</li>
+				</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Ammo_105x607mmRCannonShell_FT_Nuke</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<FT_EnrichedUranium>1</FT_EnrichedUranium>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<Steel>10</Steel>
+		</products>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+		<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
+		<workSkill>Crafting</workSkill>
+  	</RecipeDef>
+
 	<ThingDef ParentName="BaseRPG7Grenade">
 		<defName>Projectile_Rocket_FT_Nuke</defName>
 		<label>Nuclear rocket</label>
@@ -443,4 +482,5 @@
 			</li>
 		</comps>
 	</ThingDef>
+
 </Defs>
