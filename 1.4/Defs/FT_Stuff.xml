@@ -162,7 +162,7 @@
       <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <tickerType>None</tickerType>
+    <tickerType>Never</tickerType>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>10</stackLimit>
@@ -187,7 +187,7 @@
       <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
-    <tickerType>None</tickerType>
+    <tickerType>Never</tickerType>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>10</stackLimit>
