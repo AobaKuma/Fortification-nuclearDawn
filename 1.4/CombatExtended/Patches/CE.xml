@@ -71,6 +71,13 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell_directfire"]/ammoTypes</xpath>
+				<value>
+					<FT_Shell_NuclearWarhead>FT_Bullet_NuclearWarhead_CE_directfire</FT_Shell_NuclearWarhead>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
 				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_105x607mmRCannonShell"]/ammoTypes</xpath>
 				<value>
 					<Ammo_105x607mmRCannonShell_FT_Nuke>Projectile_105x607mmRCannonShell_FT_Nuke</Ammo_105x607mmRCannonShell_FT_Nuke>
