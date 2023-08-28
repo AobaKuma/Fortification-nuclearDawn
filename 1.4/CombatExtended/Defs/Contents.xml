@@ -19,6 +19,9 @@
 			<flyOverhead>true</flyOverhead>
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<shellingProps>
+				<damage>0.85</damage>
+			</shellingProps>
 		</projectile>
 		<comps>
 			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
@@ -74,7 +77,7 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>17</countdown>
+						<countdown>13</countdown>
 						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
@@ -82,20 +85,12 @@
 					</li>
 					<li>
 						<!--燒傷-->
-						<countdown>13</countdown>
+						<countdown>9</countdown>
 						<radius>39.9</radius>
 						<damamgeDef>Flame</damamgeDef>
 						<amount>30</amount>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>9</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
 						<!--衝擊波(破牆)-->
@@ -108,7 +103,7 @@
 					<li>
 						<!--EMP-->
 						<countdown>1</countdown>
-						<radius>49.9</radius>
+						<radius>25.9</radius>
 						<damamgeDef>EMP</damamgeDef>
 						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
@@ -207,7 +202,7 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>17</countdown>
+						<countdown>13</countdown>
 						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
@@ -215,20 +210,12 @@
 					</li>
 					<li>
 						<!--燒傷-->
-						<countdown>13</countdown>
+						<countdown>9</countdown>
 						<radius>39.9</radius>
 						<damamgeDef>Flame</damamgeDef>
 						<amount>30</amount>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>9</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
 						<!--衝擊波(破牆)-->
@@ -241,7 +228,7 @@
 					<li>
 						<!--EMP-->
 						<countdown>1</countdown>
-						<radius>49.9</radius>
+						<radius>25.9</radius>
 						<damamgeDef>EMP</damamgeDef>
 						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
