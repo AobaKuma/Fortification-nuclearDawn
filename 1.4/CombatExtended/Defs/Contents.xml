@@ -11,12 +11,12 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
-			<explosionDelay>40</explosionDelay>
-			<damageAmountBase>0</damageAmountBase>
+			<explosionDelay>20</explosionDelay>
+			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>49.9</explosionRadius>
-			<!--<flyOverhead>true</flyOverhead>-->
+			<flyOverhead>true</flyOverhead>
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
@@ -74,63 +74,15 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>37</countdown>
-						<radius>4.9</radius>
+						<countdown>17</countdown>
+						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 					</li>
 					<li>
-						<!--核爆心-->
-						<countdown>35</countdown>
-						<radius>9.9</radius>
-						<damamgeDef>BombSuper</damamgeDef>
-						<amount>200</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-					<li>
-						<!--核爆心-->
-						<countdown>33</countdown>
-						<radius>14.9</radius>
-						<damamgeDef>BombSuper</damamgeDef>
-						<amount>100</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-					<li>
-						<!--多級燒傷-->
-						<countdown>31</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>29</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>27</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>25</countdown>
-						<radius>34.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>23</countdown>
+						<!--燒傷-->
+						<countdown>13</countdown>
 						<radius>39.9</radius>
 						<damamgeDef>Flame</damamgeDef>
 						<amount>30</amount>
@@ -138,83 +90,19 @@
 						<chanceToStartFire>0.25</chanceToStartFire>
 					</li>
 					<li>
-						<!--衝擊波-->
-						<countdown>21</countdown>
-						<radius>49.9</radius>
-						<damamgeDef>Stun</damamgeDef>
-						<amount>0</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>19</countdown>
-						<radius>14.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>17</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>15</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>13</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波-->
-						<countdown>11</countdown>
-						<radius>49.9</radius>
-						<damamgeDef>Stun</damamgeDef>
-						<amount>0</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
 						<!--衝擊波(破牆)-->
 						<countdown>9</countdown>
-						<radius>14.9</radius>
+						<radius>29.9</radius>
 						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>7</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
 						<!--衝擊波(破牆)-->
 						<countdown>5</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>3</countdown>
 						<radius>29.9</radius>
 						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
@@ -222,7 +110,7 @@
 						<countdown>1</countdown>
 						<radius>49.9</radius>
 						<damamgeDef>EMP</damamgeDef>
-						<amount>100</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<!--<li>
@@ -256,8 +144,8 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
-			<explosionDelay>40</explosionDelay>
-			<damageAmountBase>0</damageAmountBase>
+			<explosionDelay>20</explosionDelay>
+			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>49.9</explosionRadius>
@@ -319,63 +207,15 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>37</countdown>
-						<radius>4.9</radius>
+						<countdown>17</countdown>
+						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 					</li>
 					<li>
-						<!--核爆心-->
-						<countdown>35</countdown>
-						<radius>9.9</radius>
-						<damamgeDef>BombSuper</damamgeDef>
-						<amount>200</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-					<li>
-						<!--核爆心-->
-						<countdown>33</countdown>
-						<radius>14.9</radius>
-						<damamgeDef>BombSuper</damamgeDef>
-						<amount>100</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-					</li>
-					<li>
-						<!--多級燒傷-->
-						<countdown>31</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>29</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>27</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>25</countdown>
-						<radius>34.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<countdown>23</countdown>
+						<!--燒傷-->
+						<countdown>13</countdown>
 						<radius>39.9</radius>
 						<damamgeDef>Flame</damamgeDef>
 						<amount>30</amount>
@@ -383,83 +223,19 @@
 						<chanceToStartFire>0.25</chanceToStartFire>
 					</li>
 					<li>
-						<!--衝擊波-->
-						<countdown>21</countdown>
-						<radius>49.9</radius>
-						<damamgeDef>Stun</damamgeDef>
-						<amount>0</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>19</countdown>
-						<radius>14.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>17</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>15</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>13</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波-->
-						<countdown>11</countdown>
-						<radius>49.9</radius>
-						<damamgeDef>Stun</damamgeDef>
-						<amount>0</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
 						<!--衝擊波(破牆)-->
 						<countdown>9</countdown>
-						<radius>14.9</radius>
+						<radius>29.9</radius>
 						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>7</countdown>
-						<radius>19.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
 						<!--衝擊波(破牆)-->
 						<countdown>5</countdown>
-						<radius>24.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>3</countdown>
 						<radius>29.9</radius>
 						<damamgeDef>Thump</damamgeDef>
-						<amount>30</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<li>
@@ -467,7 +243,7 @@
 						<countdown>1</countdown>
 						<radius>49.9</radius>
 						<damamgeDef>EMP</damamgeDef>
-						<amount>100</amount>
+						<amount>50</amount>
 						<explosionSound>Explosion_GiantBomb</explosionSound>
 					</li>
 					<!--<li>
