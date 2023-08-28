@@ -11,7 +11,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
-			<explosionDelay>20</explosionDelay>
+			<explosionDelay>3</explosionDelay>
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
@@ -77,38 +77,22 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>13</countdown>
+						<countdown>1</countdown>
 						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
+						<armorPenetration>2</armorPenetration>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 					</li>
 					<li>
-						<!--燒傷-->
-						<countdown>9</countdown>
-						<radius>39.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>5</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--EMP-->
 						<countdown>1</countdown>
 						<radius>25.9</radius>
 						<damamgeDef>EMP</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
+						<amount>40</amount>
+						<armorPenetration>2</armorPenetration>
+						<explosionSound>Explosion_EMP</explosionSound>
 					</li>
-					<!--<li>
+					<li>
 						<countdown>2</countdown>
 						<radius>20.9</radius>
 						<damamgeDef>Flame</damamgeDef>
@@ -122,7 +106,7 @@
 						<postExplosionSpawnChance>0.75</postExplosionSpawnChance>
 						<postExplosionSpawnThingCount>25</postExplosionSpawnThingCount>
 						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>-->
+					</li>
 				</compositeExplosions>
 			</li>
 		</comps>
@@ -140,7 +124,7 @@
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
 			<explosionDelay>20</explosionDelay>
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>49.9</explosionRadius>
@@ -202,38 +186,22 @@
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
-						<countdown>13</countdown>
+						<countdown>1</countdown>
 						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
 						<amount>300</amount>
+						<armorPenetration>2</armorPenetration>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 					</li>
 					<li>
-						<!--燒傷-->
-						<countdown>9</countdown>
-						<radius>39.9</radius>
-						<damamgeDef>Flame</damamgeDef>
-						<amount>30</amount>
-						<explosionSound>MortarBomb_Explode</explosionSound>
-						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>
-					<li>
-						<!--衝擊波(破牆)-->
-						<countdown>5</countdown>
-						<radius>29.9</radius>
-						<damamgeDef>Thump</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
-					</li>
-					<li>
-						<!--EMP-->
 						<countdown>1</countdown>
 						<radius>25.9</radius>
 						<damamgeDef>EMP</damamgeDef>
-						<amount>50</amount>
-						<explosionSound>Explosion_GiantBomb</explosionSound>
+						<amount>40</amount>
+						<armorPenetration>2</armorPenetration>
+						<explosionSound>Explosion_EMP</explosionSound>
 					</li>
-					<!--<li>
+					<li>
 						<countdown>2</countdown>
 						<radius>20.9</radius>
 						<damamgeDef>Flame</damamgeDef>
@@ -247,7 +215,7 @@
 						<postExplosionSpawnChance>0.75</postExplosionSpawnChance>
 						<postExplosionSpawnThingCount>25</postExplosionSpawnThingCount>
 						<chanceToStartFire>0.25</chanceToStartFire>
-					</li>-->
+					</li>
 				</compositeExplosions>
 			</li>
 		</comps>
