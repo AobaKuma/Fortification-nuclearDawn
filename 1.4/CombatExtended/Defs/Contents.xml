@@ -123,8 +123,8 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
-			<explosionDelay>20</explosionDelay>
-			<damageAmountBase>3</damageAmountBase>
+			<explosionDelay>3</explosionDelay>                                
+			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>49.9</explosionRadius>
