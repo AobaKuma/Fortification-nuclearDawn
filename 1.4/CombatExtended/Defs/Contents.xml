@@ -10,21 +10,18 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageDef>Stun</damageDef>
-			<explosionDelay>3</explosionDelay>
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationSharp>0</armorPenetrationSharp>
-			<armorPenetrationBlunt>0</armorPenetrationBlunt>
-			<explosionRadius>49.9</explosionRadius>
-			<flyOverhead>true</flyOverhead>
-			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundExplode>Explosion_GiantBomb</soundExplode>
-			<shellingProps>
-				<damage>0.85</damage>
-			</shellingProps>
-		</projectile>
-		<comps>
-			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+            <damageDef>Stun</damageDef>
+            <explosionDelay>3</explosionDelay>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationSharp>0</armorPenetrationSharp>
+            <armorPenetrationBlunt>0</armorPenetrationBlunt>
+            <explosionRadius>49.9</explosionRadius>
+            <!--<flyOverhead>true</flyOverhead>-->
+            <explosionEffect>GiantExplosion</explosionEffect>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+        </projectile>
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
@@ -73,7 +70,7 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
@@ -109,7 +106,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
@@ -123,8 +120,8 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Stun</damageDef>
-			<explosionDelay>3</explosionDelay>                                
-			<damageAmountBase>15</damageAmountBase>
+			<explosionDelay>20</explosionDelay>
+			<damageAmountBase>3</damageAmountBase>
 			<armorPenetrationSharp>0</armorPenetrationSharp>
 			<armorPenetrationBlunt>0</armorPenetrationBlunt>
 			<explosionRadius>49.9</explosionRadius>

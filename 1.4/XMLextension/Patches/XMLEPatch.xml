@@ -18,7 +18,7 @@
 			</Operation>
 		</caseTrue>
 	</Operation>
-	
+
 	<!--================削弱核彈======================-->
 	<Operation Class="XmlExtensions.OptionalPatch">
 		<modId>Aoba.Fortress.Industrial.NuclearDawn</modId>
@@ -34,7 +34,7 @@
 						<match Class="PatchOperationSequence">
 							<operations>	
 								<li Class="PatchOperationReplace">
-									<xpath>Defs/ThingDef[defName="Projectile_105x607mmRCannonShell_FT_Nuke" or defName="FT_Bullet_NuclearWarhead_CE"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+									<xpath>Defs/ThingDef[defName="Projectile_105x607mmRCannonShell_FT_Nuke" or defName="FT_Bullet_NuclearWarhead_CE"]/modExtensions/li[@Class="Fortification.ModExtension_ExpolsionWithEvents"]/conditions</xpath>
 									<value>
 										<conditions>
 											<li>
@@ -88,7 +88,7 @@
 								<li Class="PatchOperationConditional">
 									<xpath>Defs/ThingDef[defName="Projectile_Rocket_FT_Nuke"]</xpath>
 									<match Class="PatchOperationReplace">
-										<xpath>Defs/ThingDef[defName="Projectile_Rocket_FT_Nuke"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+										<xpath>Defs/ThingDef[defName="Projectile_Rocket_FT_Nuke"]/modExtensions/li[@Class="Fortification.ModExtension_ExpolsionWithEvents"]/conditions</xpath>
 										<value>
 											<conditions>
 												<li>
@@ -145,7 +145,7 @@
 						<nomatch Class="PatchOperationSequence">
 							<operations>
 								<li Class="PatchOperationReplace">
-									<xpath>Defs/ThingDef[defName="FT_Bullet_NuclearWarhead"]/comps/li[@Class="Fortification.CompProperties_ExpolsionWithEvents"]/conditions</xpath>
+									<xpath>Defs/ThingDef[defName="FT_Bullet_NuclearWarhead"]/modExtensions/li[@Class="Fortification.ModExtension_ExpolsionWithEvents"]/conditions</xpath>
 									<value>
 										<conditions>
 											<li>

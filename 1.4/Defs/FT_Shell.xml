@@ -226,8 +226,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <comps>
-      <li Class="Fortification.CompProperties_ExpolsionWithEvents">
+    <modExtensions>
+      <li Class="Fortification.ModExtension_ExpolsionWithEvents">
         <conditions>
           <li>
             <conditionDef>FTND_NuclearFlare</conditionDef>
@@ -276,7 +276,7 @@
           </li>
         </conditions>
       </li>
-      <li Class="Fortification.CompProperties_CompositeExplosion">
+      <li Class="Fortification.ModExtension_CompositeExplosion">
         <compositeExplosions>
           <li>
             <!--核爆心-->
@@ -312,7 +312,7 @@
           </li>
         </compositeExplosions>
       </li>
-    </comps>
+    </modExtensions>
     <projectile>
       <damageDef>Stun</damageDef>
       <speed>41</speed>
