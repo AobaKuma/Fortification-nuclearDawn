@@ -3,7 +3,7 @@
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CE</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -112,7 +112,7 @@
 	<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -129,8 +129,8 @@
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
-		<comps>
-			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
@@ -179,7 +179,7 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
@@ -215,13 +215,13 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CEAmmoDetonation</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -238,7 +238,15 @@
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</projectile>
 		<comps>
-			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>16</Fragment_Large>
+					<Fragment_Small>100</Fragment_Small>
+				</fragments>
+			</li>			
+		</comps>
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFallout</conditionDef>
@@ -257,13 +265,8 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="CombatExtended.CompProperties_Fragments">
-				<fragments>
-					<Fragment_Large>16</Fragment_Large>
-					<Fragment_Small>100</Fragment_Small>
-				</fragments>
-			</li>
-		</comps>
+
+		</modExtensions>
 	</ThingDef>
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="105x607mmRCannonShellBase">
@@ -283,7 +286,7 @@
 	<ThingDef ParentName="Base105x607mmRCannonShell">
 		<defName>Projectile_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
-		<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -299,8 +302,8 @@
 			<explosionEffect>GiantExplosion</explosionEffect>
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 		</projectile>
-		<comps>
-			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
@@ -349,7 +352,7 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
@@ -385,7 +388,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>	
 	
 	<RecipeDef>
@@ -485,7 +488,7 @@
 	<ThingDef ParentName="BaseRPG7Grenade">
 		<defName>Projectile_Rocket_FT_Nuke</defName>
 		<label>Nuclear rocket</label>
-		<thingClass>Fortification.Projectile_ExplosiveByComps</thingClass>
+		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/AobaNukeRocket_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -503,8 +506,8 @@
 			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
 			<speed>29</speed>
 		</projectile>
-		<comps>
-			<li Class="Fortification.CompProperties_ExpolsionWithEvents">
+		<modExtensions>
+			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
@@ -553,7 +556,7 @@
 					</li>
 				</conditions>
 			</li>
-			<li Class="Fortification.CompProperties_CompositeExplosion">
+			<li Class="Fortification.ModExtension_CompositeExplosion">
 				<compositeExplosions>
 					<li>
 						<!--核爆心-->
@@ -589,7 +592,7 @@
 					</li>
 				</compositeExplosions>
 			</li>
-		</comps>
+		</modExtensions>
 	</ThingDef>
 
 </Defs>

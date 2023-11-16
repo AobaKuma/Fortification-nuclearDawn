@@ -2,6 +2,7 @@
 
 <Patch>
 	<Operation Class="PatchOperationSequence">
+
 		<operations>
 			<li Class="PatchOperationAdd">
 				<xpath>Defs</xpath>
@@ -133,7 +134,6 @@
 					<MeleePenetrationFactor>1.6</MeleePenetrationFactor>
 				</value>
 			</li>
-
 			<li Class="PatchOperationConditional">
 				<xpath>Defs/ThingDef[defName="FTND_NukeLauncher"]</xpath>
 				<match Class="CombatExtended.PatchOperationMakeGunCECompatible">
