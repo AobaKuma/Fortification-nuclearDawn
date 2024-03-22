@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <MakeFT_Shell_NuclearWarhead.label>組裝155毫米口徑核砲彈</MakeFT_Shell_NuclearWarhead.label>
+  <MakeFT_Shell_NuclearWarhead.description>使用濃縮鈾製造由155毫米榴彈砲發射的核彈.</MakeFT_Shell_NuclearWarhead.description>
+  <MakeFT_Shell_NuclearWarhead.jobString>正在組裝核彈頭.</MakeFT_Shell_NuclearWarhead.jobString>
+
+  <MakeAmmo_105x607mmRCannonShell_FT_Nuke.label>組裝105毫米口徑無後座力核砲彈</MakeAmmo_105x607mmRCannonShell_FT_Nuke.label>
+  <MakeAmmo_105x607mmRCannonShell_FT_Nuke.description>使用濃縮鈾製造由105毫米無後座力砲發射的核彈.</MakeAmmo_105x607mmRCannonShell_FT_Nuke.description>
+  <MakeAmmo_105x607mmRCannonShell_FT_Nuke.jobString>正在組裝核彈頭.</MakeAmmo_105x607mmRCannonShell_FT_Nuke.jobString>
+
+
+
+</LanguageData>

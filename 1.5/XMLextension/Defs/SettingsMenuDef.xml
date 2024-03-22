@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XmlExtensions.SettingsMenuDef>
+		<defName>FTND_SettingMenu</defName>
+		<modId>Aoba.Fortress.Industrial.NuclearDawn</modId>
+		<label>Fortification - Nuclear Dawn</label>
+		<settings>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>All changes needs a restart to apply!</text>
+				<anchor>Middle</anchor>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>RemoveNuclearLauncher</key>
+				<label>Remove nuclear launcher</label>
+				<defaultValue>false</defaultValue>
+			</li>
+			<li Class="XmlExtensions.Setting.Checkbox">
+				<key>AdjustNuclearExplosion</key>
+				<label>nuclear explosion from a peaceful world, so the impact side-effect will lesser.</label>
+				<defaultValue>false</defaultValue>
+			</li>	
+			<li Class="XmlExtensions.Setting.Text">
+				<text>even with nuclear launcher removed, you can still using mortar nuke...and so did enemy.</text>
+				<anchor>Middle</anchor>
+			</li>
+		</settings>
+	</XmlExtensions.SettingsMenuDef>
+</Defs>

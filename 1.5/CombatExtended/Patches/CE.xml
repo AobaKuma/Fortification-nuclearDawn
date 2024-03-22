@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					<CombatExtended.AmmoCategoryDef>
+						<defName>FT_Shell_Nuclear</defName>
+						<label>nuclear shell</label>
+						<labelShort>nuclear</labelShort>
+						<description>An artillery fired fission nuclear ordance.</description>
+					</CombatExtended.AmmoCategoryDef>
+				</value>
+			</li>
+
+			<!--155mm Nuke-->
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="FT_Shell_NuclearWarhead"]</xpath>
+				<match Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_Shell_NuclearWarhead"]</xpath>
+					<value>
+						<ThingDef Class="CombatExtended.AmmoDef" ParentName="HeavyAmmoBase">
+							<defName>FT_Shell_NuclearWarhead</defName>
+							<label>155mm Howitzer shell (Nuclear)</label>
+							<description>An industrial-tech warhead powered by consists of precisely calculated explosives and uranium.it creates a huge explosion,electromagnetic pulse and ignite flammable object around the target, even not within kill range you will still be stunned by the shockwave and violent flashes. Can be fired from mortars or launched by artillery. Won't explode when damaged..../n/n But be aware, a nuclear bomb explosion could have unpredictable negative effects on the environment./n/nPowerful yet highly controversial weapons. While they are widely used in some worlds, they are strictly banned in many other worlds.
+								Most industrial worlds prefer purchasing clean anti-grain warheads from core worlds over building nuclear warheads themselves under such excuse that the former is more  environment-friendly than the latter, but the truth is more than that: It is the need of arm dealers from the core worlds for a place to dump the mass-produced anti-grain weaponry that  drove the industrial worlds into mass purchasing such warheads, as they are pretty much impossible for the industrial worlds to reverse engineer, unlike crude nuclear warheads.</description>
+							<graphicData>
+								<texPath>FT_NuclearDawn/Ammo/155mmNuke</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<thingCategories>
+								<li>Ammo155mmHowitzerShells</li>
+							</thingCategories>
+							<stackLimit>25</stackLimit>
+							<tradeTags>
+								<li>CE_AutoEnableTrade_Sellable</li>
+								<li>CE_AutoEnableCrafting_TableMachining</li>
+							</tradeTags>
+							<statBases>
+								<MarketValue>2500</MarketValue>
+								<MaxHitPoints>300</MaxHitPoints>
+								<Mass>46.7</Mass>
+								<Bulk>47.67</Bulk>
+							</statBases>
+							<cookOffFlashScale>40</cookOffFlashScale>
+							<cookOffSound>Explosion_GiantBomb</cookOffSound>
+							<isMortarAmmo>true</isMortarAmmo>
+							<ammoClass>FT_Shell_Nuclear</ammoClass>
+							<thingSetMakerTags>
+								<li>RewardStandardHighFreq</li>
+							</thingSetMakerTags>
+							<detonateProjectile>FT_Bullet_NuclearWarhead_CEAmmoDetonation</detonateProjectile>
+						</ThingDef>
+					</value>
+				</match>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="FT_Make_NuclearWarhead"]/defName</xpath>
+				<value>
+					<defName>MakeFT_Shell_NuclearWarhead</defName>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell"]/ammoTypes</xpath>
+				<value>
+					<FT_Shell_NuclearWarhead>FT_Bullet_NuclearWarhead_CE</FT_Shell_NuclearWarhead>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_155mmHowitzerShell_directfire"]/ammoTypes</xpath>
+				<value>
+					<FT_Shell_NuclearWarhead>FT_Bullet_NuclearWarhead_CE_directfire</FT_Shell_NuclearWarhead>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_105x607mmRCannonShell"]/ammoTypes</xpath>
+				<value>
+					<Ammo_105x607mmRCannonShell_FT_Nuke>Projectile_105x607mmRCannonShell_FT_Nuke</Ammo_105x607mmRCannonShell_FT_Nuke>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases</xpath>
+				<value>
+					<Bulk>0.05</Bulk>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/categories</xpath>
+				<value>
+					<li>Metallic_Weapon</li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Sharp</xpath>
+				<value>
+					<StuffPower_Armor_Sharp>1.4</StuffPower_Armor_Sharp>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Blunt</xpath>
+				<value>
+					<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/statBases/StuffPower_Armor_Heat</xpath>
+				<value>
+					<StuffPower_Armor_Heat>0.0</StuffPower_Armor_Heat>
+				</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/statFactors/MeleeWeapon_CooldownMultiplier</xpath>
+				<value>
+					<MeleeWeapon_CooldownMultiplier>1.33</MeleeWeapon_CooldownMultiplier>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="FT_DepletedUranium"]/stuffProps/statFactors</xpath>
+				<value>
+					<Mass>2.45</Mass>
+					<MeleePenetrationFactor>1.6</MeleePenetrationFactor>
+				</value>
+			</li>
+			<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName="FTND_NukeLauncher"]</xpath>
+				<match Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>FTND_NukeLauncher</defName>
+					<statBases>
+						<Mass>20.00</Mass>
+						<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+						<SightsEfficiency>2.24</SightsEfficiency>
+						<ShotSpread>0.2</ShotSpread>
+						<SwayFactor>3.24</SwayFactor>
+						<Bulk>13.0</Bulk>
+					</statBases>
+					<Properties>
+						<verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Projectile_Rocket_FT_Nuke</defaultProjectile>
+						<warmupTime>2.1</warmupTime>
+						<range>48</range>
+						<minRange>20</minRange>
+						<burstShotCount>1</burstShotCount>
+						<soundCast>InfernoCannon_Fire</soundCast>
+						<soundCastTail>GunTail_Heavy</soundCastTail>
+						<onlyManualCast>true</onlyManualCast>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+						<muzzleFlashScale>14</muzzleFlashScale>
+					</Properties>
+					<FireModes>
+						<aiAimMode>AimedShot</aiAimMode>
+					</FireModes>
+					<weaponTags>
+						<li>CE_AI_AOE</li>
+					</weaponTags>
+					<AllowWithRunAndGun>false</AllowWithRunAndGun>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

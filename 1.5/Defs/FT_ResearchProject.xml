@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>FT_NuclearDawn</defName>
+    <label>Data:Nuclear Dawn</label>
+    <description>A somewhat strange disk, the accompanying paper explains that the disk contains information about the extraction and use of an ultra-efficient energy source.</description>
+    <baseCost>2000</baseCost>
+    <discoveredLetterTitle>Data Disk: Nuclear Dawn</discoveredLetterTitle>
+    <discoveredLetterText>
+      [Interstellar Industries Complex Nara Terminal]
+      [ version="1.5"] [ encoding="UTF-8" ]
+      Loading....
+      [Data decryption completed]
+      The enrichment and separation of naturally-occurring uranium metal into high-concentration enriched uranium and depleted uranium...
+    please note: the company is not responsible for the results of nuclear materials usage___Nara Industries
+
+      [To user]
+      Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.
+      We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.
+      OS>:_</discoveredLetterText>
+    <discoveredLetterDisabledWhen>
+      <bigThreatsDisabled>true</bigThreatsDisabled>
+    </discoveredLetterDisabledWhen>
+    <techLevel>Industrial</techLevel>
+    <tab>HeavyIndustry</tab>
+    <prerequisites>
+      <li>FT_ENIAC</li>
+    </prerequisites>
+    <researchViewX>10.00</researchViewX>
+    <researchViewY>2.20</researchViewY>
+    <requiredResearchFacilities>
+      <li>FT_ENIAC</li>
+    </requiredResearchFacilities>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->nuclear warfare</li>
+        <li>subject->uranium refining</li>
+        <li>subject->nuclear power</li>
+  
+        <li>subject_story->included a schematic of large Sector mass spectrometer</li>
+        <li>subject_story->repeatedly mentioned that nuclear enegry is an inevitable civilization filter.</li>
+        <li>subject_story->wrote many messy notes in the margins about the antimatter industries' energy monopoly.</li>
+        <li>subject_story->constantly conveys to people that nuclear shouldn't be forbidden.</li>
+        <li>subject_story->attached a brand logo sticker from Nara Industries on title</li>
+        <li>subject_story->summarized in great detail How to transform nuclear fuel rods into nuclear weapon in the face of invasion by high-tech armies</li>
+  
+        <li>subject_gerund->enrich uranium refining</li>
+        <li>subject_gerund->powering up a city</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

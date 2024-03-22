@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<FT_Shell_NuclearWarhead.label>155毫米榴弹炮炮弹(战术核弹)</FT_Shell_NuclearWarhead.label>
+  <FT_Shell_NuclearWarhead.description>由精确计算的炸药及浓缩铀组成的工业技术结晶,它会产生巨大的爆炸和电磁脉冲并点燃目标周围的所有物体.即使不在杀伤范围内仍然会被冲击波和猛烈的闪光击晕. 可以由155毫米口径榴弹炮发射, 损坏时不会爆炸.../n/n 但请注意，核爆炸可能会对环境产生不可预测的短期负面影响__奈良重工.</FT_Shell_NuclearWarhead.description>
+
+  <FT_Bullet_NuclearWarhead_CE.label>155毫米榴弹炮弹(战术核弹)</FT_Bullet_NuclearWarhead_CE.label>
+
+  <Ammo_105x607mmRCannonShell_FT_Nuke.label>105x607毫米无后座力炮炮弹(战术核弹)</Ammo_105x607mmRCannonShell_FT_Nuke.label>
+  <Ammo_105x607mmRCannonShell_FT_Nuke.description>由105x607毫米无后座力炮发射的小当量核炮弹,它会产生巨大的爆炸和电磁脉冲并点燃目标周围的所有物体.即使不在杀伤范围内仍然会被冲击波和猛烈的闪光击晕,请在发射前注意安全距离避免核爆将发射装置连带操作员汽化的事故..损坏时不会爆炸.../n/n 但请注意，核爆炸可能会对环境产生不可预测的短期负面影响__奈良重工.</Ammo_105x607mmRCannonShell_FT_Nuke.description>
+
+  <Projectile_105x607mmRCannonShell_FT_Nuke.label>105x607毫米无后座力炮炮弹(战术核弹)</Projectile_105x607mmRCannonShell_FT_Nuke.label>
+</LanguageData>

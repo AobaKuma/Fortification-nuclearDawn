@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_DepletedUranium.label>貧鈾</FT_DepletedUranium.label>
+  <FT_DepletedUranium.description>一種深色重金屬,是濃縮鈾的副產品.也是中寰世界戰爭中常見的裝甲材料,其極高的密度和硬度使其非常適合製造刀片,裝甲和穿甲彈藥.</FT_DepletedUranium.description>
+
+  <FT_UraniumOutput.label>鈾離心物</FT_UraniumOutput.label>
+  <FT_UraniumOutput.description>一種可以在車床上分離成濃縮鈾和貧化鈾的產品</FT_UraniumOutput.description>
+
+  <FT_EnrichedUranium.label>濃縮鈾</FT_EnrichedUranium.label>
+  <FT_EnrichedUranium.description>一種高度濃縮的核武器級鈾,可以製成核彈頭或者核反應堆的燃料,是中寰世界的一種常規武器材料,爆炸威力上可與反粒子彈頭相媲美. 注意:過多堆積該產物可能會造成危險__奈良重工.</FT_EnrichedUranium.description>
+
+
+</LanguageData>
