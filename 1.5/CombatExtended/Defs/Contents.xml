@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="Base155mmHowitzerShell">
+	<ThingDef ParentName="Base155mmHowitzerShellBase">
 		<defName>FT_Bullet_NuclearWarhead_CE</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
 		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
@@ -269,7 +269,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="105x607mmRCannonShellBase">
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="105x607mmRShellBase">
 		<defName>Ammo_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
 		<graphicData>
@@ -283,7 +283,7 @@
 		<detonateProjectile>Bullet_60mmMortarShell_HE</detonateProjectile>
 	</ThingDef>
 	
-	<ThingDef ParentName="Base105x607mmRCannonShell">
+	<ThingDef ParentName="Base105x607mmRShell">
 		<defName>Projectile_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
 		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
