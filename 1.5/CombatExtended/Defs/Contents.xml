@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="Base155mmHowitzerShellBase">
+	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CE</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
 		<thingClass>Fortification.ProjectileCE_ExplosiveByComps</thingClass>
@@ -10,16 +10,28 @@
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-            <damageDef>Stun</damageDef>
-            <explosionDelay>3</explosionDelay>
-            <damageAmountBase>15</damageAmountBase>
-            <armorPenetrationSharp>0</armorPenetrationSharp>
-            <armorPenetrationBlunt>0</armorPenetrationBlunt>
-            <explosionRadius>49.9</explosionRadius>
-            <!--<flyOverhead>true</flyOverhead>-->
-            <explosionEffect>GiantExplosion</explosionEffect>
-            <soundExplode>Explosion_GiantBomb</soundExplode>
-        </projectile>
+			<damageDef>Stun</damageDef>
+			<explosionDelay>3</explosionDelay>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationSharp>0</armorPenetrationSharp>
+			<armorPenetrationBlunt>0</armorPenetrationBlunt>
+			<explosionRadius>49.9</explosionRadius>
+			<!--<flyOverhead>true</flyOverhead>-->
+			<explosionEffect>GiantExplosion</explosionEffect>
+			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<shellingProps>
+				<damage>1</damage>
+			</shellingProps>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>40</Fragment_Large>
+					<Fragment_Small>80</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
@@ -77,7 +89,7 @@
 						<countdown>1</countdown>
 						<radius>14.9</radius>
 						<damamgeDef>BombSuper</damamgeDef>
-						<amount>300</amount>
+						<amount>500</amount>
 						<armorPenetration>2</armorPenetration>
 						<explosionSound>MortarBomb_Explode</explosionSound>
 					</li>
@@ -108,7 +120,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
@@ -127,8 +139,20 @@
 			<explosionRadius>49.9</explosionRadius>
 			<!--<flyOverhead>true</flyOverhead>-->
 			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundExplode>Explosion_GiantBomb</soundExplode>
+			<soundExplode>Explosion_GiantBomb</soundExplode>			
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<shellingProps>
+				<damage>0.75</damage>
+			</shellingProps>
 		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Large>30</Fragment_Large>
+					<Fragment_Small>60</Fragment_Small>
+				</fragments>
+			</li>
+		</comps>
 		<modExtensions>
 			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
 				<conditions>
@@ -217,7 +241,7 @@
 			</li>
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CEAmmoDetonation</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
@@ -243,7 +267,7 @@
 					<Fragment_Large>16</Fragment_Large>
 					<Fragment_Small>100</Fragment_Small>
 				</fragments>
-			</li>			
+			</li>
 		</comps>
 		<modExtensions>
 			<li Class="Fortification.ModExtension_ExpolsionWithEvents">
@@ -268,7 +292,7 @@
 
 		</modExtensions>
 	</ThingDef>
-	
+
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="105x607mmRShellBase">
 		<defName>Ammo_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
@@ -282,7 +306,7 @@
 		<ammoClass>FT_Shell_Nuclear</ammoClass>
 		<detonateProjectile>Bullet_60mmMortarShell_HE</detonateProjectile>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="Base105x607mmRShell">
 		<defName>Projectile_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
@@ -389,8 +413,8 @@
 				</compositeExplosions>
 			</li>
 		</modExtensions>
-	</ThingDef>	
-	
+	</ThingDef>
+
 	<RecipeDef>
 		<defName>MakeAmmo_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>assemble nuclear warhead</label>
@@ -446,7 +470,7 @@
 		<workSkill>Crafting</workSkill>
 	</RecipeDef>
 
-	 <RecipeDef>
+	<RecipeDef>
 		<defName>FT_Dismantle_NuclearWarhead_B</defName>
 		<label>dismantle 105mm nuclear warhead</label>
 		<description>dismantle 105mm nuclear warhead and restore peace to this terrible world...</description>
@@ -461,9 +485,9 @@
 		<ingredients>
 			<li>
 				<filter>
-				<thingDefs>
-					<li>Ammo_105x607mmRCannonShell_FT_Nuke</li>
-				</thingDefs>
+					<thingDefs>
+						<li>Ammo_105x607mmRCannonShell_FT_Nuke</li>
+					</thingDefs>
 				</filter>
 				<count>3</count>
 			</li>
@@ -483,7 +507,7 @@
 		</skillRequirements>
 		<researchPrerequisite>FT_NuclearDawn</researchPrerequisite>
 		<workSkill>Crafting</workSkill>
-  	</RecipeDef>
+	</RecipeDef>
 
 	<ThingDef ParentName="BaseRPG7Grenade">
 		<defName>Projectile_Rocket_FT_Nuke</defName>
