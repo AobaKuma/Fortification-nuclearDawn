@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
+  <FT_Shell_Nuclear.label>核彈</FT_Shell_Nuclear.label>
+  <FT_Shell_Nuclear.labelShort>核</FT_Shell_Nuclear.labelShort>
+  <FT_Shell_Nuclear.description>一種炮射核彈</FT_Shell_Nuclear.description>
+
   <FT_Shell_NuclearWarhead.label>155毫米榴彈砲砲彈(戰術核彈)</FT_Shell_NuclearWarhead.label>
   <FT_Shell_NuclearWarhead.description>由精確計算的炸藥及濃縮鈾組成的工業技術結晶,它會產生巨大的爆炸和電磁脈衝並點燃目標周圍的所有物體.即使不在殺傷範圍內仍然會被沖擊波和猛烈的閃光擊暈. 可以由155毫米口徑榴彈砲發射, 損壞時不會爆炸.../n/n 但請注意，核爆炸可能會對環境產生不可預測的短期負面影響__奈良重工.</FT_Shell_NuclearWarhead.description>
 

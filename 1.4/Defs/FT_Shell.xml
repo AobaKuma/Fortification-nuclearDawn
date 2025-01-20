@@ -344,6 +344,7 @@
       <Mass>13</Mass>
       <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
+    <generateCommonality>0.1</generateCommonality>
     <equippedAngleOffset>45</equippedAngleOffset>
     <weaponTags>
       <li>GunSingleUse</li>

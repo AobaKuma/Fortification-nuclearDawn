@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
+	<CombatExtended.AmmoCategoryDef>
+		<defName>FT_Shell_Nuclear</defName>
+		<label>nuclear shell</label>
+		<labelShort>nuclear</labelShort>
+		<description>An artillery fired fission nuclear ordance.</description>
+	</CombatExtended.AmmoCategoryDef>
+	
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CE</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
@@ -21,7 +28,7 @@
 			<soundExplode>Explosion_GiantBomb</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<shellingProps>
-				<damage>1</damage>
+				<damage>100</damage>
 			</shellingProps>
 		</projectile>
 		<comps>
@@ -139,10 +146,10 @@
 			<explosionRadius>49.9</explosionRadius>
 			<!--<flyOverhead>true</flyOverhead>-->
 			<explosionEffect>GiantExplosion</explosionEffect>
-			<soundExplode>Explosion_GiantBomb</soundExplode>			
+			<soundExplode>Explosion_GiantBomb</soundExplode>
 			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 			<shellingProps>
-				<damage>0.75</damage>
+				<damage>100</damage>
 			</shellingProps>
 		</projectile>
 		<comps>
@@ -303,6 +310,9 @@
 		<statBases>
 			<MarketValue>1000</MarketValue>
 		</statBases>
+		<thingSetMakerTags>
+			<li>NuclearWeapon</li>
+		</thingSetMakerTags>
 		<ammoClass>FT_Shell_Nuclear</ammoClass>
 		<detonateProjectile>Bullet_60mmMortarShell_HE</detonateProjectile>
 	</ThingDef>

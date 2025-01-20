@@ -212,6 +212,7 @@
       <MarketValue>2500</MarketValue>
     </statBases>
     <thingSetMakerTags>
+      <li>NuclearWeapon</li>
       <li>RewardStandardHighFreq</li>
     </thingSetMakerTags>
     <projectileWhenLoaded>FT_Bullet_NuclearWarhead</projectileWhenLoaded>
@@ -344,6 +345,7 @@
       <Mass>13</Mass>
       <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
     </statBases>
+    <generateCommonality>0.1</generateCommonality>
     <equippedAngleOffset>45</equippedAngleOffset>
     <weaponTags>
       <li>GunSingleUse</li>
@@ -355,6 +357,7 @@
       <li>ExoticMisc</li>
     </tradeTags>
     <thingSetMakerTags>
+      <li>NuclearWeapon</li>
       <li>SingleUseWeapon</li>
       <li>RewardStandardLowFreq</li>
     </thingSetMakerTags>

@@ -2,19 +2,7 @@
 
 <Patch>
 	<Operation Class="PatchOperationSequence">
-
 		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs</xpath>
-				<value>
-					<CombatExtended.AmmoCategoryDef>
-						<defName>FT_Shell_Nuclear</defName>
-						<label>nuclear shell</label>
-						<labelShort>nuclear</labelShort>
-						<description>An artillery fired fission nuclear ordance.</description>
-					</CombatExtended.AmmoCategoryDef>
-				</value>
-			</li>
 
 			<!--155mm Nuke-->
 			<li Class="PatchOperationConditional">
