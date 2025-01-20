@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
   <FT_Shell_Nuclear.label>核彈</FT_Shell_Nuclear.label>
   <FT_Shell_Nuclear.labelShort>核</FT_Shell_Nuclear.labelShort>
   <FT_Shell_Nuclear.description>一種炮射核彈</FT_Shell_Nuclear.description>
@@ -13,6 +12,5 @@
   <Ammo_105x607mmRCannonShell_FT_Nuke.label>105x607毫米無後座力砲砲彈(戰術核彈)</Ammo_105x607mmRCannonShell_FT_Nuke.label>
   <Ammo_105x607mmRCannonShell_FT_Nuke.description>由105x607毫米無後座力砲發射的小當量核砲彈,它會產生巨大的爆炸和電磁脈衝並點燃目標周圍的所有物體.即使不在殺傷範圍內仍然會被沖擊波和猛烈的閃光擊暈,請在發射前注意安全距離避免核爆將發射裝置連帶操作員汽化的事故..損壞時不會爆炸.../n/n 但請注意，核爆炸可能會對環境產生不可預測的短期負面影響__奈良重工.</Ammo_105x607mmRCannonShell_FT_Nuke.description>
 
-  <Projectile_105x607mmRCannonShell_FT_Nuke.label>105x607毫米無後座力砲砲彈(戰術核彈)</Projectile_105x607mmRCannonShell_FT_Nuke.label>
-  
+  <Projectile_105x607mmRCannonShell_FT_Nuke.label>105x607毫米無後座力砲砲彈(戰術核彈)</Projectile_105x607mmRCannonShell_FT_Nuke.label> 
 </LanguageData>
