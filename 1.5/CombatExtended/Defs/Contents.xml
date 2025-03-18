@@ -45,27 +45,27 @@
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
 						<percent>1</percent>
-						<duration>180000~360000</duration>
+						<duration>24000~48000</duration>
 					</li>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
 						<percent>5</percent>
-						<duration>15000~180000</duration>
+						<duration>15000~30000</duration>
 					</li>
 					<li>
 						<conditionDef>FTND_NuclearFlare</conditionDef>
 						<percent>25</percent>
-						<duration>2500~15000</duration>
+						<duration>2500~10000</duration>
 					</li>
 					<li>
 						<conditionDef>FTND_NuclearFallout</conditionDef>
 						<percent>1</percent>
-						<duration>360000</duration>
+						<duration>180000</duration>
 					</li>
 					<li>
 						<conditionDef>FTND_NuclearFallout</conditionDef>
 						<percent>5</percent>
-						<duration>60000~180000</duration>
+						<duration>30000~90000</duration>
 					</li>
 					<li>
 						<conditionDef>FTND_NuclearFallout</conditionDef>
