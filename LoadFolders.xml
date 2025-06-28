@@ -20,4 +20,10 @@
 		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_Steam">1.5/CombatExtended</li>
 		<li IfModActive="imranfish.xmlextensions">1.5/XMLextension</li>	
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="CETeam.CombatExtended,CETeam.CombatExtended_Steam">1.6/CombatExtended</li>
+		<li IfModActive="imranfish.xmlextensions">1.6/XMLextension</li>	
+	</v1.6>
 </loadFolders>

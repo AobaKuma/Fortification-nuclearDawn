@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<!-- RTG -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>FT_RTG</defName>
+		<label>R.T.G.</label>
+		<description>radioisotope thermoelectric generator which generates free energy forever(relatively) without using fuel. A free energy source that can be produced with basic technical knowledge of nuclear.</description>
+		<graphicData>
+			<texPath>FT_NuclearDawn/RTG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3, 1.3)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<pathCost>42</pathCost>
+		<rotatable>false</rotatable>
+		<fillPercent>0.4</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.5</staticSunShadowHeight>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>1200</WorkToBuild>
+			<Mass>20</Mass>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<researchPrerequisites>
+			<li>FT_NuclearDawn</li>
+		</researchPrerequisites>
+		<size>(1,1)</size>
+		<costList>
+			<Steel>50</Steel>
+			<FT_EnrichedUranium>1</FT_EnrichedUranium>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>30</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<tradeability>Sellable</tradeability>
+		<tradeTags>
+			<li>ExoticBuilding</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- 輕水堆 -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>FT_Reactor</defName>
+		<label>Nuclear Reactor</label>
+		<description>A compact-designed full automatic nuclear reactor for the far-colony base, very reliable in safety and stability.</description>
+		<graphicData>
+			<texPath>FT_NuclearDawn/NuclearReactor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3.5,3.5)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<pathCost>42</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<passability>PassThroughOnly</passability>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<canOverlapZones>false</canOverlapZones>
+		<castEdgeShadows>true</castEdgeShadows>
+		<staticSunShadowHeight>0.15</staticSunShadowHeight>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>30000</WorkToBuild>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<designationCategory>Power</designationCategory>
+		<researchPrerequisites>
+			<li>FT_NuclearDawn</li>
+		</researchPrerequisites>
+		<size>(3, 3)</size>
+		<costList>
+			<Steel>400</Steel>
+			<FT_ConcreteCompressed>9</FT_ConcreteCompressed>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.0333</fuelConsumptionRate>
+				<fuelCapacity>4.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>FT_EnrichedUranium</li>
+					</thingDefs>
+				</fuelFilter>
+				<initialFuelPercent>0</initialFuelPercent>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>5</glowRadius>
+				<glowColor>(80,80,217,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>50</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-10000</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- 電磁離心機 -->
+	<ThingDef ParentName="FT_BenchBase">
+		<defName>FT_Centrifuge</defName>
+		<label>Calutron</label>
+		<description>Calutron, A large Sector mass spectrometer which requires electricity from a whole colony to drive, uses an electric field to accelerate particle impact and deflection extract natural uranium to enriched uranium and by-product depleted uranium.</description>
+		<thingClass>Fortified.Building_WorkTableAutonomous</thingClass>
+    	<tickerType>Normal</tickerType>
+		<graphicData>
+			<texPath>FT_NuclearDawn/Centrifuge</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(6,6)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories Inherit="false"/>
+		<costList>
+			<Steel>750</Steel>
+			<Silver>200</Silver>
+			<FT_ConcreteCompressed>16</FT_ConcreteCompressed>
+			<ComponentIndustrial>20</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>1500</Mass>
+			<WorkToBuild>30000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(4,4)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>FT_NuclearDawn</li>
+		</researchPrerequisites>
+		<building>
+			<buildingTags>
+				<li>Production</li>
+			</buildingTags>
+		</building>
+		<minifiedDef></minifiedDef>
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		<comps>
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>10</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>7</glowRadius>
+				<glowColor>(255,150,100,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5000</basePowerConsumption>
+       			<idlePowerDraw>250</idlePowerDraw>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<modExtensions>
+		<li Class="Fortified.ModExtension_AutoWorkTable">
+			<workAmountPerStage>30000</workAmountPerStage>
+			<!-- <phaseEffecter_east>FTC_Producting</phaseEffecter_east>
+			<phaseEffecter_west>FTC_Producting</phaseEffecter_west>
+			<phaseEffecter_north>FTC_Producting</phaseEffecter_north>
+			<phaseEffecter_south>FTC_Producting</phaseEffecter_south>
+			<doneEffecter_east>FTC_ProductionDone</doneEffecter_east>
+			<doneEffecter_west>FTC_ProductionDone</doneEffecter_west>
+			<doneEffecter_north>FTC_ProductionDone</doneEffecter_north>
+			<doneEffecter_south>FTC_ProductionDone</doneEffecter_south> -->
+			<skills>
+			<li>
+				<key>Crafting</key>
+				<value>12</value>
+			</li>
+			</skills>
+		</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>	
