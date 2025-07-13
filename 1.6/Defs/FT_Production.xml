@@ -146,13 +146,30 @@
 		</comps>
 	</ThingDef>
 
+	<WorkGiverDef>
+		<defName>FT_Operate</defName>
+		<label>Operate Machine</label>
+		<giverClass>Fortified.WorkGiver_DoAutonomousBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>140</priorityInType>
+		<fixedBillGiverDefs>
+			<li>FT_Centrifuge</li>
+		</fixedBillGiverDefs>
+		<verb>Operate</verb>
+		<gerund>Operating at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
 	<!-- 電磁離心機 -->
 	<ThingDef ParentName="FT_BenchBase">
 		<defName>FT_Centrifuge</defName>
 		<label>Calutron</label>
 		<description>Calutron, A large Sector mass spectrometer which requires electricity from a whole colony to drive, uses an electric field to accelerate particle impact and deflection extract natural uranium to enriched uranium and by-product depleted uranium.</description>
 		<thingClass>Fortified.Building_WorkTableAutonomous</thingClass>
-    	<tickerType>Normal</tickerType>
+		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Centrifuge</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -165,7 +182,7 @@
 				<cornerBR>Damage/Corner</cornerBR>
 			</damageData>
 		</graphicData>
-		<thingCategories Inherit="false"/>
+		<thingCategories Inherit="false" />
 		<costList>
 			<Steel>750</Steel>
 			<Silver>200</Silver>
@@ -199,7 +216,7 @@
 				<li>Production</li>
 			</buildingTags>
 		</building>
-		<minifiedDef></minifiedDef>
+		<minifiedDef />
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<comps>
 			<li Class="CompProperties_Breakdownable" />
@@ -215,14 +232,14 @@
 				<compClass>CompPowerTrader</compClass>
 				<shortCircuitInRain>true</shortCircuitInRain>
 				<basePowerConsumption>5000</basePowerConsumption>
-       			<idlePowerDraw>250</idlePowerDraw>
+				<idlePowerDraw>250</idlePowerDraw>
 			</li>
 			<li Class="CompProperties_Flickable" />
 		</comps>
 		<modExtensions>
-		<li Class="Fortified.ModExtension_AutoWorkTable">
-			<workAmountPerStage>30000</workAmountPerStage>
-			<!-- <phaseEffecter_east>FTC_Producting</phaseEffecter_east>
+			<li Class="Fortified.ModExtension_AutoWorkTable">
+				<workAmountPerStage>30000</workAmountPerStage>
+				<!-- <phaseEffecter_east>FTC_Producting</phaseEffecter_east>
 			<phaseEffecter_west>FTC_Producting</phaseEffecter_west>
 			<phaseEffecter_north>FTC_Producting</phaseEffecter_north>
 			<phaseEffecter_south>FTC_Producting</phaseEffecter_south>
@@ -230,13 +247,13 @@
 			<doneEffecter_west>FTC_ProductionDone</doneEffecter_west>
 			<doneEffecter_north>FTC_ProductionDone</doneEffecter_north>
 			<doneEffecter_south>FTC_ProductionDone</doneEffecter_south> -->
-			<skills>
-			<li>
-				<key>Crafting</key>
-				<value>12</value>
+				<skills>
+					<li>
+						<key>Crafting</key>
+						<value>10</value>
+					</li>
+				</skills>
 			</li>
-			</skills>
-		</li>
 		</modExtensions>
 	</ThingDef>
 </Defs>	

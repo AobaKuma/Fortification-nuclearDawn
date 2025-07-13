@@ -28,7 +28,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <FT_EnrichedUranium>1</FT_EnrichedUranium>
+      <FT_UraniumOutput>1</FT_UraniumOutput>
     </products>
     <skillRequirements>
       <Crafting>10</Crafting>
