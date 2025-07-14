@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dismantle nuclear warhead -->
+  <FT_Dismantle_NuclearWarhead.label>拆解核弹头</FT_Dismantle_NuclearWarhead.label>
+  <!-- EN: dismantle nuclear warhead and restore peace to this terrible world... -->
+  <FT_Dismantle_NuclearWarhead.description>拆解一枚核弹头，回收其中的浓缩铀用於其他用途。</FT_Dismantle_NuclearWarhead.description>
+  <!-- EN: dismantling warhead. -->
+  <FT_Dismantle_NuclearWarhead.jobString>正在拆解核武器</FT_Dismantle_NuclearWarhead.jobString>
+  
+  <!-- EN: assemble nuclear warhead -->
+  <FT_Make_NuclearWarhead.label>组装核弹头</FT_Make_NuclearWarhead.label>
+  <!-- EN: assemble nuclear warhead by enriched uranium. -->
+  <FT_Make_NuclearWarhead.description>使用浓缩铀制造核弹。小当量核武器是中寰世界装备体系中极少数能对闪耀世界军队造成杀伤的大威力武器，但使用後造成的短期影响十分严重。</FT_Make_NuclearWarhead.description>
+  <!-- EN: assembling warhead. -->
+  <FT_Make_NuclearWarhead.jobString>正在组装核弹头</FT_Make_NuclearWarhead.jobString>
+  
+  <!-- EN: dismantle nuclear launcher -->
+  <FTND_Dismantle_NukeLauncher.label>拆解核发射装置</FTND_Dismantle_NukeLauncher.label>
+  <!-- EN: dismantle a single-use recoilless nuke launcher. -->
+  <FTND_Dismantle_NukeLauncher.description>拆解一具单兵核弹发射装置，回收其中的浓缩铀用於其他用途。</FTND_Dismantle_NukeLauncher.description>
+  <!-- EN: assembling warhead. -->
+  <FTND_Dismantle_NukeLauncher.jobString>正在拆解核武器</FTND_Dismantle_NukeLauncher.jobString>
+  
+  <!-- EN: assemble nuclear launcher -->
+  <FTND_Make_NukeLauncher.label>组装核发射装置</FTND_Make_NukeLauncher.label>
+  <!-- EN: assemble a single-use recoilless nuke launcher. -->
+  <FTND_Make_NukeLauncher.description>为核弹制造一个可用於单兵发射的手提式无後座力发射装置。</FTND_Make_NukeLauncher.description>
+  <!-- EN: assembling warhead. -->
+  <FTND_Make_NukeLauncher.jobString>正在组装核武器</FTND_Make_NukeLauncher.jobString>
+  
+  <!-- EN: spilt uranium compound -->
+  <FTND_Make_UraniumCompound.label>分离铀提取物</FTND_Make_UraniumCompound.label>
+  <!-- EN: Separation uranium compound by centrifuge for enrichment proccess. -->
+  <FTND_Make_UraniumCompound.description>透过电磁离心机来分离铀化合物以进行浓缩过程，该过程需要大量的电力与多个处理阶段。</FTND_Make_UraniumCompound.description>
+  <!-- EN: Separating uranium. -->
+  <FTND_Make_UraniumCompound.jobString>分离铀提取物</FTND_Make_UraniumCompound.jobString>
+  
+</LanguageData>

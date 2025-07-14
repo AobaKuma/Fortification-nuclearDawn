@@ -1,11 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
+  <!-- EN: Data:Nuclear Dawn -->
   <FT_NuclearDawn.label>磁碟片:核黎明</FT_NuclearDawn.label>
-	<FT_NuclearDawn.description>[資料解密完成]
-	將天然存在的金屬鈾濃縮分離為濃縮鈾和貧化鈾...
-請注意：讀取該碟片代表你以及相關團體已經取得該地區宣稱者的授權在該世界進行核技術的生產與應用
-本公司不對任何使用的結果負責___奈良重工</FT_NuclearDawn.description>
-
-
+  <!-- EN: A somewhat strange disk, the accompanying paper explains that the disk contains information about the extraction and use of an ultra-efficient energy source. -->
+  <FT_NuclearDawn.description>一張奇怪的磁盤被夾帶在技術書籍中，隨附的說明書解釋該磁碟內包含有關提取和應用一種超高效能源的詳細技術資訊。</FT_NuclearDawn.description>
+  <!-- EN: \n      [Interstellar Industries Complex Nara Terminal]\n      [ version="1.6"] [ encoding="UTF-8" ]\n      Loading....\n      [Data decryption completed]\n      The enrichment and separation of naturally-occurring uranium metal into high-concentration enriched uranium and depleted uranium...\n    please note: the company is not responsible for the results of nuclear materials usage___Nara Industries\n\n      [To user]\n      Being able to build ENIAC and read this information means that you or your civilization already has the minimum requirements for the realization of the technology in the disc.\n      We look forward to further cooperation with you to create a beautiful industrialized society in the rimworld.\n      OS>:_ -->
+  <FT_NuclearDawn.discoveredLetterText>[資料解密完成]\n	將天然存在的金屬鈾濃縮分離為濃縮鈾和貧化鈾...\n請注意：讀取該碟片代表你以及相關團體已經取得該地區宣稱者的授權在該世界進行核技術的生產與應用\n本公司不對任何使用的結果負責___奈良重工</FT_NuclearDawn.discoveredLetterText>
+  <!-- EN: Data Disk: Nuclear Dawn -->
+  <FT_NuclearDawn.discoveredLetterTitle>數據碟片: 核黎明</FT_NuclearDawn.discoveredLetterTitle>
+  <!-- EN:
+    <li>subject->nuclear warfare</li>
+    <li>subject->uranium refining</li>
+    <li>subject->nuclear power</li>
+    <li>subject_story->included a schematic of large Sector mass spectrometer</li>
+    <li>subject_story->repeatedly mentioned that nuclear enegry is an inevitable civilization filter.</li>
+    <li>subject_story->wrote many messy notes in the margins about the antimatter industries' energy monopoly.</li>
+    <li>subject_story->constantly conveys to people that nuclear shouldn't be forbidden.</li>
+    <li>subject_story->attached a brand logo sticker from Nara Industries on title</li>
+    <li>subject_story->summarized in great detail How to transform nuclear fuel rods into nuclear weapon in the face of invasion by high-tech armies</li>
+    <li>subject_gerund->enrich uranium refining</li>
+    <li>subject_gerund->powering up a city</li>
+  -->
+  <FT_NuclearDawn.generalRules.rulesStrings>
+    <li>subject->核戰爭</li>
+    <li>subject->鈾精煉</li>
+    <li>subject->核能</li>
+    <li>subject_story->包括了大型扇形質譜儀的工程原理圖</li>
+    <li>subject_story->多次提到了核能是無法避免的文明過濾器</li>
+    <li>subject_story->在空白處寫了許多關於反粒子能源壟斷的雜亂筆記</li>
+    <li>subject_story->不斷向人們傳達核能不應該被禁止</li>
+    <li>subject_story->在封面上貼著奈良工業的公司標誌貼紙</li>
+    <li>subject_story->詳細總結了在先進軍隊入侵的情況下如何將核燃料棒改造成核武器</li>
+    <li>subject_gerund->精煉濃縮鈾</li>
+    <li>subject_gerund->為城市供電</li>
+  </FT_NuclearDawn.generalRules.rulesStrings>
+  
 </LanguageData>

@@ -1,9 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-  <FT_Shell_NuclearWarhead.label>核彈</FT_Shell_NuclearWarhead.label>
-  <FT_Shell_NuclearWarhead.description>由精確計算的炸藥和鈾組成的工業技術結晶,常見於中寰世界與早期太空文明的戰爭機器使用,它會產生巨大的爆炸和電磁脈衝並點燃目標周圍的易燃物體.即使不在殺傷範圍內仍然會被沖擊波和猛烈的閃光擊暈. 可以從迫擊砲發射或由大砲發射, 損壞時不會爆炸.../n/n 但請注意，核爆炸可能會對環境產生不可預測的短期負面影響__奈良重工.</FT_Shell_NuclearWarhead.description>
-
+  
+  <!-- EN: nuclear warhead -->
   <FT_Bullet_NuclearWarhead.label>核彈</FT_Bullet_NuclearWarhead.label>
-
-
+  
+  <!-- EN: nuclear warhead -->
+  <FT_Shell_NuclearWarhead.label>核彈</FT_Shell_NuclearWarhead.label>
+  <!-- EN: An industrial-tech warhead powered by consists of precisely calculated explosives and uranium. it creates a huge explosion, electromagnetic pulse, and ignite flammable object around the target, even not within kill range you will still be stunned by the shockwave and violent flashes.\n It can be fired from mortars or launched by artillery. Won't explode when damaged.\n\n But be aware, that a nuclear explosion could have unpredictable adverse effects on the environment.\n\n Powerful yet highly controversial weapons. While they are widely used in some worlds, they are strictly banned in many other worlds.\n Most industrial worlds prefer purchasing clean anti-grain warheads from core worlds over building nuclear warheads themselves under the excuse that the former is more environment-friendly than the latter.\nStill, the truth is more than that: It is the need of the arms dealers from the core worlds for a place to dump the mass-produced anti-grain weaponry that drove the industrial worlds into mass purchasing such warheads. unlike nuclear warheads, reverse engineering them is impossible in the industrial world. -->
+  <FT_Shell_NuclearWarhead.description>由精確計算的炸藥和鈾組成的工業技術結晶，常見於中寰世界與早期太空文明的戰爭機器使用，它會產生巨大的爆炸和電磁脈衝並點燃目標周圍的易燃物體.即使不在殺傷範圍內仍然會被沖擊波和猛烈的閃光擊暈. 可以從迫擊砲發射或由大砲發射， 損壞時不會爆炸.../n/n 但請注意，核爆炸可能會對環境產生不可預測的短期負面影響__奈良重工。</FT_Shell_NuclearWarhead.description>
+  
+  <!-- EN: nuclear launcher -->
+  <FTND_NukeLauncher.label>無後座力核發射器</FTND_NukeLauncher.label>
+  <!-- EN: A single-use recoilless launcher produced using a lathe, which is designed to fire an N-45 nuclear shell known as codename: chibby. Good against large groups of soft targets or a massive Fortified.\n\n As a single-use massive destruction weapon it may lead to friendly fire quite commonly, be aware of use. -->
+  <FTND_NukeLauncher.description>使用車床就能生產的一次性無後坐力發射器，設計用於發射代號為小胖子的 N-45型核彈。 通常用於對付大量軟目標或大型防禦工事。\n\n 作為一次性大規模殺傷性武器，使用不當可能會造成友軍誤擊與環境汙染，請小心使用。</FTND_NukeLauncher.description>
+  <!-- EN: barrel -->
+  <FTND_NukeLauncher.tools.barrel.label>發射管</FTND_NukeLauncher.tools.barrel.label>
+  <!-- EN: nuclear launcher -->
+  <FTND_NukeLauncher.verbs.Verb_ShootOneUse.label>無後座力核發射器</FTND_NukeLauncher.verbs.Verb_ShootOneUse.label>
+  
 </LanguageData>

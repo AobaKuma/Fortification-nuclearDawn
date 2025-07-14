@@ -1,25 +1,44 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <FTND_NuclearFlare.label>电磁脉冲</FTND_NuclearFlare.label>
-  <FTND_NuclearFlare.description>由于核爆炸产生了电磁脉冲,短期内会使电子设备停止工作.</FTND_NuclearFlare.description>
-  <FTND_NuclearFlare.endMessage>电磁脉冲的影响已经消退.</FTND_NuclearFlare.endMessage>
-  <FTND_NuclearFlare.letterText>发生了核电磁脉冲.\n\n强烈的电离辐射将关闭所有电气设备.\n\n该影响在短期内应该会结束.</FTND_NuclearFlare.letterText>
-
-  <FTND_NuclearFallout.label>放射性落尘</FTND_NuclearFallout.label>
-  <FTND_NuclearFallout.description>一团核爆产生的放射性沉降物垄罩了整个地区.任何不在屋檐下的生物都会缓慢中毒.</FTND_NuclearFallout.description>
-  <FTND_NuclearFallout.endMessage>绝大部分的放射性落尘已经落下.</FTND_NuclearFallout.endMessage>
-  <FTND_NuclearFallout.letterText>一团核爆产生的放射性沉降物垄罩了整个地区.任何不在屋檐下的生物都会缓慢中毒.\n\n该影响在短期内应该会结束.</FTND_NuclearFallout.letterText>
-
-  <FTND_NuclearWinter.label>短期性核冬天</FTND_NuclearWinter.label>
-  <FTND_NuclearWinter.description>一场核爆炸产生的灰尘云极大扰乱了气候,将造成显著的核冬天.</FTND_NuclearWinter.description>
-  <FTND_NuclearWinter.endMessage>绝大部分的落尘已经落下.</FTND_NuclearWinter.endMessage>
-  <FTND_NuclearWinter.letterText>一场核爆炸产生的灰尘云极大扰乱了气候,将造成显著的核冬天.\n\n该影响在短期内应该会结束..</FTND_NuclearWinter.letterText>
-
+  
+  <!-- EN: electromagnetic storm -->
   <FTND_Flashstorm.label>电磁脉冲雷暴</FTND_Flashstorm.label>
-  <FTND_Flashstorm.description>一场因核爆产生的电磁雷暴正在肆虐区域.</FTND_Flashstorm.description>
+  <!-- EN: A freak localized storm is blasting a small area with repeated lightning strikes. -->
+  <FTND_Flashstorm.description>一场因核爆产生的电磁雷暴正在肆虐区域。</FTND_Flashstorm.description>
+  <!-- EN: The electromagnetic storm is over. -->
   <FTND_Flashstorm.endMessage>电磁脉冲雷暴已经停止</FTND_Flashstorm.endMessage>
-  <FTND_Flashstorm.letterText>一场因核爆产生的电磁雷暴正在肆虐区域.</FTND_Flashstorm.letterText>
-
-
+  <!-- EN: A freak localized flashstorm is striking a small area with lightning. This can cause massive fires. -->
+  <FTND_Flashstorm.letterText>一场因核爆产生的电磁雷暴正在肆虐区域。</FTND_Flashstorm.letterText>
+  
+  <!-- EN: nuclear fallout -->
+  <FTND_NuclearFallout.label>放射性落尘</FTND_NuclearFallout.label>
+  <!-- EN: A plume of radioactive fallout is slowly settling over this entire region. Any living thing not under a roof will be slowly poisoned, and items left outside will corrode. -->
+  <FTND_NuclearFallout.description>一团核爆产生的放射性沉降物垄罩了整个地区.任何不在屋檐下的生物都会缓慢中毒。</FTND_NuclearFallout.description>
+  <!-- EN: a cloud of toxic fallout will blanket the area around [map_definite] for [gameConditionDuration_duration], killing outdoor plant and animal life -->
+  <FTND_NuclearFallout.descriptionFuture>团核爆产生的放射性沉降物垄罩了[map_definite]周围的区域，大约将持续[gameConditionDuration_duration]并对室外的植物和动物产生致命影响。</FTND_NuclearFallout.descriptionFuture>
+  <!-- EN: The worst of the toxic fallout has settled. -->
+  <FTND_NuclearFallout.endMessage>绝大部分的放射性落尘已经落下。</FTND_NuclearFallout.endMessage>
+  <!-- EN: A plume of radioactive fallout is settling over this entire region.\n\nAny person or creature not under a roof will be slowly sickened by the toxic dust settling out of the atmosphere.\n\nIt will last for anywhere between a few days to over a quadrum. -->
+  <FTND_NuclearFallout.letterText>一团核爆产生的放射性沉降物垄罩了整个地区.任何不在屋檐下的生物都会缓慢中毒.\n\n该影响在短期内应该会结束。</FTND_NuclearFallout.letterText>
+  
+  <!-- EN: electromagnetic pulse -->
+  <FTND_NuclearFlare.label>电磁脉冲</FTND_NuclearFlare.label>
+  <!-- EN: A Nuclear electromagnetic pulse occurs in the area. The electromagnetic interference will prevent most electrical devices from working. -->
+  <FTND_NuclearFlare.description>由於核爆炸产生了电磁脉冲，短期内会使电子设备停止工作。</FTND_NuclearFlare.description>
+  <!-- EN: The electromagnetic pulse is ending. -->
+  <FTND_NuclearFlare.endMessage>电磁脉冲的影响已经消退。</FTND_NuclearFlare.endMessage>
+  <!-- EN: A Nuclear electromagnetic pulse has occured.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day. -->
+  <FTND_NuclearFlare.letterText>发生了核电磁脉冲.\n\n强烈的电离辐射将关闭所有电气设备.\n\n该影响在短期内应该会结束。</FTND_NuclearFlare.letterText>
+  
+  <!-- EN: nuclear winter -->
+  <FTND_NuclearWinter.label>短期性核冬天</FTND_NuclearWinter.label>
+  <!-- EN: A nuclear explosion has occurred and massive quantities of ash have spewed into the atmosphere., significantly reducing the amount of light which reaches the surface. Temperatures will be colder and plants will grow slower. -->
+  <FTND_NuclearWinter.description>一场核爆炸产生的灰尘云极大扰乱了气候，将造成显着的核冬天。</FTND_NuclearWinter.description>
+  <!-- EN: a layer of ash will be desposited in the upper atmosphere, reducing sunlight around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem -->
+  <FTND_NuclearWinter.descriptionFuture>一层灰烬云沉积在高层大气中，减少了[map_definite]周围的阳光从而导致气温骤降，这场持续[gameConditionDuration_duration]的短期变化将严重损害当地生态系统。</FTND_NuclearWinter.descriptionFuture>
+  <!-- EN: Most of the ash has settled. -->
+  <FTND_NuclearWinter.endMessage>绝大部分的落尘已经落下。</FTND_NuclearWinter.endMessage>
+  <!-- EN: A nuclear explosion has occurred and massive quantities of ash have spewed into the atmosphere..\n\nAsh in the atmosphere will obscure the sun. Temperatures will drop and plants will suffer for lack of sunlight. It could pass in a few weeks, or it might last many quadrums. -->
+  <FTND_NuclearWinter.letterText>一场核爆炸产生的灰尘云极大扰乱了气候，将造成显着的核冬天.\n\n该影响在短期内应该会结束。</FTND_NuclearWinter.letterText>
+  
 </LanguageData>

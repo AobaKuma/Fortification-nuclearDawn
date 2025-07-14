@@ -1,14 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
+  <!-- EN: Depleted Uranium -->
   <FT_DepletedUranium.label>貧鈾</FT_DepletedUranium.label>
-  <FT_DepletedUranium.description>一種深色重金屬,是濃縮鈾的副產品.也是中寰世界戰爭中常見的裝甲材料,其極高的密度和硬度使其非常適合製造刀片,裝甲和穿甲彈藥.</FT_DepletedUranium.description>
-
-  <FT_UraniumOutput.label>鈾離心物</FT_UraniumOutput.label>
-  <FT_UraniumOutput.description>一種可以在車床上分離成濃縮鈾和貧化鈾的產品</FT_UraniumOutput.description>
-
+  <!-- EN: A dark, heavy metal which is the by-product of Enriched Uranium. Also the shell material in common Mid-World Warfare, its extreme density and hardness make it good for making the blade, armor， and ammunition -->
+  <FT_DepletedUranium.description>一種深色重金屬，是濃縮鈾的副產品.也是中寰世界戰爭中常見的裝甲材料，其極高的密度和硬度使其非常適合製造刀片，裝甲和穿甲彈藥。</FT_DepletedUranium.description>
+  
+  <!-- EN: Enriched Uranium -->
   <FT_EnrichedUranium.label>濃縮鈾</FT_EnrichedUranium.label>
-  <FT_EnrichedUranium.description>一種高度濃縮的核武器級鈾,可以製成核彈頭或者核反應堆的燃料,是中寰世界的一種常規武器材料,爆炸威力上可與反粒子彈頭相媲美. 注意:過多堆積該產物可能會造成危險__奈良重工.</FT_EnrichedUranium.description>
-
-
+  <!-- EN: a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead. -->
+  <FT_EnrichedUranium.description>一種高度濃縮的核武器級鈾，可以製成核彈頭或者核反應堆的燃料，是中寰世界的一種常規武器材料，爆炸威力上可與反粒子彈頭相媲美. 注意:過多堆積該產物可能會造成危險__奈良重工。</FT_EnrichedUranium.description>
+  
+  <!-- EN: MOX fuel -->
+  <FT_MOX.label>乏燃料</FT_MOX.label>
+  <!-- EN: Mixed oxide fuel, commonly referred to as MOX fuel, is nuclear fuel that contains more than one oxide of fissile material, usually consisting of plutonium blended with natural uranium. -->
+  <FT_MOX.description>混合氧化物燃料，通常稱為 MOX 燃料，是一種含有多種裂變材料氧化物的核燃料，通常由鈽與天然鈾混合而成，可作為二次燃料使用。</FT_MOX.description>
+  
+  <!-- EN: Separation Uranium -->
+  <FT_UraniumOutput.label>鈾離心物</FT_UraniumOutput.label>
+  <!-- EN: a product that can seperate into enriched uranium and depleted uranium on the lathe -->
+  <FT_UraniumOutput.description>一種可以在車床上分離成濃縮鈾和貧化鈾的產品</FT_UraniumOutput.description>
+  
 </LanguageData>

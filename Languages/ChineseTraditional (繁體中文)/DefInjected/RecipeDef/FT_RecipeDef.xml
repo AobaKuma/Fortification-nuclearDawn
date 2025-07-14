@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: dismantle nuclear warhead -->
+  <FT_Dismantle_NuclearWarhead.label>拆解核彈頭</FT_Dismantle_NuclearWarhead.label>
+  <!-- EN: dismantle nuclear warhead and restore peace to this terrible world... -->
+  <FT_Dismantle_NuclearWarhead.description>拆解一枚核彈頭，回收其中的濃縮鈾用於其他用途。</FT_Dismantle_NuclearWarhead.description>
+  <!-- EN: dismantling warhead. -->
+  <FT_Dismantle_NuclearWarhead.jobString>正在拆解核武器</FT_Dismantle_NuclearWarhead.jobString>
+  
+  <!-- EN: assemble nuclear warhead -->
+  <FT_Make_NuclearWarhead.label>組裝核彈頭</FT_Make_NuclearWarhead.label>
+  <!-- EN: assemble nuclear warhead by enriched uranium. -->
+  <FT_Make_NuclearWarhead.description>使用濃縮鈾製造核彈。小當量核武器是中寰世界裝備體系中極少數能對閃耀世界軍隊造成殺傷的大威力武器，但使用後造成的短期影響十分嚴重。</FT_Make_NuclearWarhead.description>
+  <!-- EN: assembling warhead. -->
+  <FT_Make_NuclearWarhead.jobString>正在組裝核彈頭</FT_Make_NuclearWarhead.jobString>
+  
+  <!-- EN: dismantle nuclear launcher -->
+  <FTND_Dismantle_NukeLauncher.label>拆解核發射裝置</FTND_Dismantle_NukeLauncher.label>
+  <!-- EN: dismantle a single-use recoilless nuke launcher. -->
+  <FTND_Dismantle_NukeLauncher.description>拆解一具單兵核彈發射裝置，回收其中的濃縮鈾用於其他用途。</FTND_Dismantle_NukeLauncher.description>
+  <!-- EN: assembling warhead. -->
+  <FTND_Dismantle_NukeLauncher.jobString>正在拆解核武器</FTND_Dismantle_NukeLauncher.jobString>
+  
+  <!-- EN: assemble nuclear launcher -->
+  <FTND_Make_NukeLauncher.label>組裝核發射裝置</FTND_Make_NukeLauncher.label>
+  <!-- EN: assemble a single-use recoilless nuke launcher. -->
+  <FTND_Make_NukeLauncher.description>為核彈製造一個可用於單兵發射的手提式無後座力發射裝置。</FTND_Make_NukeLauncher.description>
+  <!-- EN: assembling warhead. -->
+  <FTND_Make_NukeLauncher.jobString>正在組裝核武器</FTND_Make_NukeLauncher.jobString>
+  
+  <!-- EN: spilt uranium compound -->
+  <FTND_Make_UraniumCompound.label>分離鈾提取物</FTND_Make_UraniumCompound.label>
+  <!-- EN: Separation uranium compound by centrifuge for enrichment proccess. -->
+  <FTND_Make_UraniumCompound.description>透過電磁離心機來分離鈾化合物以進行濃縮過程，該過程需要大量的電力與多個處理階段。</FTND_Make_UraniumCompound.description>
+  <!-- EN: Separating uranium. -->
+  <FTND_Make_UraniumCompound.jobString>分離鈾提取物</FTND_Make_UraniumCompound.jobString>
+  
+</LanguageData>

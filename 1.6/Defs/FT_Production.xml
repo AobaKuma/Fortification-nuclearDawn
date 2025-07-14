@@ -147,7 +147,7 @@
 	</ThingDef>
 
 	<WorkGiverDef>
-		<defName>FT_Operate</defName>
+		<defName>FTND_OperateAutonomous</defName>
 		<label>Operate Machine</label>
 		<giverClass>Fortified.WorkGiver_DoAutonomousBill</giverClass>
 		<workType>Crafting</workType>

@@ -1,14 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
-  <FT_RTG.label>R.T.G.</FT_RTG.label>
-  <FT_RTG.description>放射性同位素熱電發電機，在不需要額外燃料的情況下永遠（相對的）產生電力。 一種可以利用核技術知識生產的永恆電池.\n\n 請注意該裝置在運作時會被動的產生廢熱.</FT_RTG.description>
-
-  <FT_Reactor.label>核能反應爐</FT_Reactor.label>
-  <FT_Reactor.description>針對遠地區殖民地設計的全自動核裂變反應爐，雖然安全性與穩定性都非常的可靠但發電能力遠遠不如邊緣核能公司設計的反應爐.\n\n 請注意該裝置在運作時會被動的產生廢熱.</FT_Reactor.description>
-
+  
+  <!-- EN: Calutron -->
   <FT_Centrifuge.label>電磁型同位素分離器</FT_Centrifuge.label>
-  <FT_Centrifuge.description>需要來自整個殖民地電力來驅動的同位素質譜儀，使用電場加速粒子撞擊和偏轉，將天然鈾提取為濃縮鈾和副產物貧化鈾.</FT_Centrifuge.description>
-
-
+  <!-- EN: Calutron, A large Sector mass spectrometer which requires electricity from a whole colony to drive, uses an electric field to accelerate particle impact and deflection extract natural uranium to enriched uranium and by-product depleted uranium. -->
+  <FT_Centrifuge.description>需要來自整個殖民地電力來驅動的同位素質譜儀，使用電場加速粒子撞擊和偏轉，將天然鈾提取為濃縮鈾和副產物貧化鈾。</FT_Centrifuge.description>
+  
+  <!-- EN: Nuclear Reactor -->
+  <FT_Reactor.label>核能反應爐</FT_Reactor.label>
+  <!-- EN: A compact-designed full automatic nuclear reactor for the far-colony base, very reliable in safety and stability. -->
+  <FT_Reactor.description>針對遠地區殖民地設計的全自動核裂變反應爐，雖然安全性與穩定性都非常的可靠但發電能力遠遠不如邊緣核能公司設計的反應爐.\n\n 請注意該裝置在運作時會被動的產生廢熱。</FT_Reactor.description>
+  
+  <!-- EN: R.T.G. -->
+  <FT_RTG.label>R.T.G.</FT_RTG.label>
+  <!-- EN: radioisotope thermoelectric generator which generates free energy forever(relatively) without using fuel. A free energy source that can be produced with basic technical knowledge of nuclear. -->
+  <FT_RTG.description>放射性同位素熱電發電機，在不需要額外燃料的情況下永遠（相對的）產生電力。 一種可以利用核技術知識生產的永恆電池.\n\n 請注意該裝置在運作時會被動的產生廢熱。</FT_RTG.description>
+  
 </LanguageData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Operate Machine -->
+  <FTND_OperateAutonomous.label>操作机器</FTND_OperateAutonomous.label>
+  <!-- EN: Operating at -->
+  <FTND_OperateAutonomous.gerund>操作於</FTND_OperateAutonomous.gerund>
+  <!-- EN: Operate -->
+  <FTND_OperateAutonomous.verb>操作</FTND_OperateAutonomous.verb>
+  
+</LanguageData>

@@ -1,13 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+  
+  <!-- EN: Depleted Uranium -->
   <FT_DepletedUranium.label>贫铀</FT_DepletedUranium.label>
-  <FT_DepletedUranium.description>一种深色重金属,是浓缩铀的副产品.也是中寰世界战争中常见的装甲材料,其极高的密度和硬度使其非常适合制造刀片,装甲和穿甲弹药.</FT_DepletedUranium.description>
-
-  <FT_UraniumOutput.label>铀离心物</FT_UraniumOutput.label>
-  <FT_UraniumOutput.description>一种可以在车床上分离成浓缩铀和贫化铀的产品</FT_UraniumOutput.description>
-
+  <!-- EN: A dark, heavy metal which is the by-product of Enriched Uranium. Also the shell material in common Mid-World Warfare, its extreme density and hardness make it good for making the blade, armor, and ammunition -->
+  <FT_DepletedUranium.description>一种深色重金属，是浓缩铀的副产品.也是中寰世界战争中常见的装甲材料，其极高的密度和硬度使其非常适合制造刀片，装甲和穿甲弹药。</FT_DepletedUranium.description>
+  
+  <!-- EN: Enriched Uranium -->
   <FT_EnrichedUranium.label>浓缩铀</FT_EnrichedUranium.label>
-  <FT_EnrichedUranium.description>一种高度浓缩的核武器级铀,可以制成核弹头或者核反应堆的燃料,是中寰世界的一种常规武器材料,爆炸威力上可与反粒子弹头相媲美. 注意:过多堆积该产物可能会造成危险__奈良重工.</FT_EnrichedUranium.description>
-
+  <!-- EN: a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead. -->
+  <FT_EnrichedUranium.description>一种高度浓缩的核武器级铀，可以制成核弹头或者核反应堆的燃料，是中寰世界的一种常规武器材料，爆炸威力上可与反粒子弹头相媲美. 注意:过多堆积该产物可能会造成危险__奈良重工。</FT_EnrichedUranium.description>
+  
+  <!-- EN: MOX fuel -->
+  <FT_MOX.label>乏燃料</FT_MOX.label>
+  <!-- EN: Mixed oxide fuel, commonly referred to as MOX fuel, is nuclear fuel that contains more than one oxide of fissile material, usually consisting of plutonium blended with natural uranium. -->
+  <FT_MOX.description>混合氧化物燃料，通常称为 MOX 燃料，是一种含有多种裂变材料氧化物的核燃料，通常由钸与天然铀混合而成，可作为二次燃料使用。</FT_MOX.description>
+  
+  <!-- EN: Separation Uranium -->
+  <FT_UraniumOutput.label>铀离心物</FT_UraniumOutput.label>
+  <!-- EN: a product that can seperate into enriched uranium and depleted uranium on the lathe -->
+  <FT_UraniumOutput.description>一种可以在车床上分离成浓缩铀和贫化铀的产品</FT_UraniumOutput.description>
+  
 </LanguageData>

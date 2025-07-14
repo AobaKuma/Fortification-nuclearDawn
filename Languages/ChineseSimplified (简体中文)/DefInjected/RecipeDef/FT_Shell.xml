@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <FT_Make_NuclearWarhead.label>组装核弹头</FT_Make_NuclearWarhead.label>
-  <FT_Make_NuclearWarhead.description>使用浓缩铀制造核弹.</FT_Make_NuclearWarhead.description>
-  <FT_Make_NuclearWarhead.jobString>正在组装核弹头.</FT_Make_NuclearWarhead.jobString>
-
-</LanguageData>
