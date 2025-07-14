@@ -10,7 +10,7 @@
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CE</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
 	<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -252,7 +252,7 @@
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CEAmmoDetonation</defName>
 		<label>155mm Howitzer shell (Nuclear)</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -320,7 +320,7 @@
 	<ThingDef ParentName="Base105x607mmRShell">
 		<defName>Projectile_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>105x607mmR cannon shell (Nuclear)</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -522,7 +522,7 @@
 	<ThingDef ParentName="BaseRPG7Grenade">
 		<defName>Projectile_Rocket_FT_Nuke</defName>
 		<label>Nuclear rocket</label>
-		<thingClass>Fortified.ProjectileCE_ExplosiveByComps</thingClass>
+		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/AobaNukeRocket_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
