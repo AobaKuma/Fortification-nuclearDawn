@@ -5,9 +5,9 @@
     <defName>FTND_NuclearFlare</defName>
     <conditionClass>GameCondition_DisableElectricity</conditionClass>
     <label>electromagnetic pulse</label>
-    <description>A Nuclear electromagnetic pulse occurs in the area. The electromagnetic interference will prevent most electrical devices from working.</description>
+    <description>A powerful burst of electromagnetic energy has surged in the area. The electromagnetic interference will prevent most electrical devices from working.</description>
     <endMessage>The electromagnetic pulse is ending.</endMessage>
-    <letterText>A Nuclear electromagnetic pulse has occured.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
+    <letterText>A nuclear electromagnetic pulse has occured.\n\nThe intense radiation will shut down all electrical devices.\n\nIt should pass in about a day.</letterText>
     <letterDef>NegativeEvent</letterDef>
     <canBePermanent>true</canBePermanent>
   </GameConditionDef>
@@ -28,7 +28,7 @@
     <defName>FTND_NuclearWinter</defName>
     <conditionClass>GameCondition_VolcanicWinter</conditionClass>
     <label>nuclear winter</label>
-    <description>A nuclear explosion has occurred and massive quantities of ash have spewed into the atmosphere., significantly reducing the amount of light which reaches the surface. Temperatures will be colder and plants will grow slower.</description>
+    <description>A nuclear explosion has occurred and massive quantities of ash have spewed into the atmosphere, significantly reducing the amount of light which reaches the surface. Temperatures will be colder and plants will grow slower.</description>
     <descriptionFuture>a layer of ash will be desposited in the upper atmosphere, reducing sunlight around [map_definite] for [gameConditionDuration_duration], seriously harming the local ecosystem</descriptionFuture>
     <endMessage>Most of the ash has settled.</endMessage>
     <letterText>A nuclear explosion has occurred and massive quantities of ash have spewed into the atmosphere..\n\nAsh in the atmosphere will obscure the sun. Temperatures will drop and plants will suffer for lack of sunlight. It could pass in a few weeks, or it might last many quadrums.</letterText>

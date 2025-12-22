@@ -2,9 +2,9 @@
 <Defs>
   <RecipeDef>
     <defName>FTND_Make_UraniumCompound</defName>
-    <label>spilt uranium compound</label>
-    <description>Separation uranium compound by centrifuge for enrichment proccess.</description>
-    <jobString>Separating uranium.</jobString>
+    <label>separate uranium compound</label>
+    <description>Separate uranium compounds as part of the enrichment process. Creates a semi-processed product that needs further refining.</description>
+    <jobString>Separating uranium compounds.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -40,8 +40,8 @@
   <RecipeDef>
     <defName>FTND_Make_NukeLauncher</defName>
     <label>assemble nuclear launcher</label>
-    <description>assemble a single-use recoilless nuke launcher.</description>
-    <jobString>assembling warhead.</jobString>
+    <description>Assemble a single-use recoilless nuke launcher.</description>
+    <jobString>Assembling nuke launcher.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -105,7 +105,7 @@
     <defName>FTND_Dismantle_NukeLauncher</defName>
     <label>dismantle nuclear launcher</label>
     <description>dismantle a single-use recoilless nuke launcher.</description>
-    <jobString>assembling warhead.</jobString>
+    <jobString>Dismantling nuke launcher.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -144,8 +144,8 @@
   <RecipeDef>
     <defName>FT_Dismantle_NuclearWarhead</defName>
     <label>dismantle nuclear warhead</label>
-    <description>dismantle nuclear warhead and restore peace to this terrible world...</description>
-    <jobString>dismantling warhead.</jobString>
+    <description>Dismantle a nuclear warhead.</description>
+    <jobString>Dismantling nuclear warhead.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
@@ -183,8 +183,8 @@
   <RecipeDef>
     <defName>FT_Make_NuclearWarhead</defName>
     <label>assemble nuclear warhead</label>
-    <description>assemble nuclear warhead by enriched uranium.</description>
-    <jobString>assembling warhead.</jobString>
+    <description>assemble nuclear warhead with enriched uranium.</description>
+    <jobString>Assembling nuclear warhead.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>

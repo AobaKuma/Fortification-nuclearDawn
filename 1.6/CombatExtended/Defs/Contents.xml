@@ -2,9 +2,9 @@
 <Defs>
 	<CombatExtended.AmmoCategoryDef>
 		<defName>FT_Shell_Nuclear</defName>
-		<label>nuclear shell</label>
+		<label>nuclear</label>
 		<labelShort>nuclear</labelShort>
-		<description>An artillery fired fission nuclear ordance.</description>
+		<description>Causes massive explosion and electromagnetic pulse upon impact. Ignites flammable objects and can stun targets beyond the blast radius. Causes adverse effects on the surrounding environment.</description>
 	</CombatExtended.AmmoCategoryDef>
 	
 	<ThingDef ParentName="Base155mmHowitzerShell">
@@ -130,7 +130,7 @@
 
 	<ThingDef ParentName="Base155mmHowitzerShellDirectfire">
 		<defName>FT_Bullet_NuclearWarhead_CE_directfire</defName>
-		<label>155mm Howitzer shell (Nuclear)</label>
+		<label>155mm howitzer shell (Nuclear)</label>
 		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
@@ -251,7 +251,7 @@
 
 	<ThingDef ParentName="Base155mmHowitzerShell">
 		<defName>FT_Bullet_NuclearWarhead_CEAmmoDetonation</defName>
-		<label>155mm Howitzer shell (Nuclear)</label>
+		<label>155mm howitzer shell (Nuclear)</label>
 		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/Nukes_projectileCE</texPath>
@@ -428,8 +428,8 @@
 	<RecipeDef>
 		<defName>MakeAmmo_105x607mmRCannonShell_FT_Nuke</defName>
 		<label>assemble nuclear warhead</label>
-		<description>assemble nuclear warhead by enriched uranium.</description>
-		<jobString>assembling warhead.</jobString>
+		<description>Assemble a nuclear warhead with enriched uranium.</description>
+		<jobString>assembling nuclear warhead.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
 		<soundWorking>Recipe_Machining</soundWorking>
@@ -483,7 +483,7 @@
 	<RecipeDef>
 		<defName>FT_Dismantle_NuclearWarhead_B</defName>
 		<label>dismantle 105mm nuclear warhead</label>
-		<description>dismantle 105mm nuclear warhead and restore peace to this terrible world...</description>
+		<description>Dismantle a 105mm nuclear warhead.</description>
 		<jobString>dismantling warhead.</jobString>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<effectWorking>Cook</effectWorking>
@@ -521,7 +521,7 @@
 
 	<ThingDef ParentName="BaseRPG7Grenade">
 		<defName>Projectile_Rocket_FT_Nuke</defName>
-		<label>Nuclear rocket</label>
+		<label>nuclear rocket</label>
 		<thingClass>FortifiedCE.ProjectileCE_ExplosiveByComps</thingClass>
 		<graphicData>
 			<texPath>FT_NuclearDawn/AobaNukeRocket_projectile</texPath>

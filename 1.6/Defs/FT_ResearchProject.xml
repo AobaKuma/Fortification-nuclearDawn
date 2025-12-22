@@ -3,10 +3,10 @@
 
   <ResearchProjectDef>
     <defName>FT_NuclearDawn</defName>
-    <label>Data:Nuclear Dawn</label>
+    <label>Data: nuclear dawn</label>
     <description>A somewhat strange disk, the accompanying paper explains that the disk contains information about the extraction and use of an ultra-efficient energy source.</description>
     <baseCost>2000</baseCost>
-    <discoveredLetterTitle>Data Disk: Nuclear Dawn</discoveredLetterTitle>
+    <discoveredLetterTitle>Data disk: nuclear dawn</discoveredLetterTitle>
     <discoveredLetterText>
       [Interstellar Industries Complex Nara Terminal]
       [ version="1.6"] [ encoding="UTF-8" ]

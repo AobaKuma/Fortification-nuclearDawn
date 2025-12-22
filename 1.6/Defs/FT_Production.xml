@@ -5,8 +5,8 @@
 	<!-- RTG -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_RTG</defName>
-		<label>R.T.G.</label>
-		<description>radioisotope thermoelectric generator which generates free energy forever(relatively) without using fuel. A free energy source that can be produced with basic technical knowledge of nuclear.</description>
+		<label>RTG</label>
+		<description>A radioisotope thermoelectric generator that produces continuous power without requiring fuel. A compact and reliable energy source that can be manufactured with basic nuclear engineering knowledge.</description>
 		<graphicData>
 			<texPath>FT_NuclearDawn/RTG</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -75,7 +75,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>FT_Reactor</defName>
 		<label>Nuclear Reactor</label>
-		<description>A compact-designed full automatic nuclear reactor for the far-colony base, very reliable in safety and stability.</description>
+		<description>A compact, fully automated nuclear reactor built for remote colonies. Highly reliable, safe, and stable, it delivers large amounts of power with minimal oversight.</description>
 		<graphicData>
 			<texPath>FT_NuclearDawn/NuclearReactor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -148,7 +148,7 @@
 
 	<WorkGiverDef>
 		<defName>FTND_OperateAutonomous</defName>
-		<label>Operate Machine</label>
+		<label>operate machine</label>
 		<giverClass>Fortified.WorkGiver_DoAutonomousBill</giverClass>
 		<workType>Crafting</workType>
 		<priorityInType>140</priorityInType>
@@ -166,8 +166,8 @@
 	<!-- 電磁離心機 -->
 	<ThingDef ParentName="FT_BenchBase">
 		<defName>FT_Centrifuge</defName>
-		<label>Calutron</label>
-		<description>Calutron, A large Sector mass spectrometer which requires electricity from a whole colony to drive, uses an electric field to accelerate particle impact and deflection extract natural uranium to enriched uranium and by-product depleted uranium.</description>
+		<label>calutron</label>
+		<description>A massive sector-type mass spectrometer requiring substantial colony-scale power to operate. It uses strong electric fields to accelerate and deflect particles, allowing the extraction of enriched uranium from natural uranium, while producing depleted uranium as a by-product.</description>
 		<thingClass>Fortified.Building_WorkTableAutonomous</thingClass>
 		<tickerType>Normal</tickerType>
 		<graphicData>
