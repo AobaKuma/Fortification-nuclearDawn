@@ -3,8 +3,8 @@
 <Defs> 
  <ThingDef ParentName="ResourceBase">
     <defName>FT_DepletedUranium</defName>
-    <label>Depleted Uranium</label>
-    <description>A dark, heavy metal which is the by-product of Enriched Uranium. Also the shell material in common Mid-World Warfare, its extreme density and hardness make it good for making the blade, armor, and ammunition</description>
+    <label>depleted uranium</label>
+    <description>A dense, dark heavy metal produced as a byproduct of uranium enrichment. Widely used in midworld military technologies, its extreme hardness and mass make it ideal for armor plating, and armor-piercing munitions.</description>
     <graphicData>
       <texPath>FT_NuclearDawn/FT_DepletedUranium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -56,15 +56,15 @@
   
   <ThingDef ParentName="ResourceBase">
     <defName>FT_UraniumOutput</defName>
-    <label>Separation Uranium</label>
-    <description>a product that can seperate into enriched uranium and depleted uranium on the lathe</description>
+    <label>separation uranium</label>
+    <description>A semi-processed uranium product intended for further refinement. Can be machined on a lathe to produce enriched uranium and depleted uranium.</description>
     <graphicData>
       <texPath>FT_NuclearDawn/FT_SeparationUranium</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
-    <stackLimit>1</stackLimit>
+    <stackLimit>5</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
     <useHitPoints>false</useHitPoints>
     <statBases>
@@ -81,7 +81,7 @@
   <RecipeDef MayRequire="Dubwise.Rimatomics">
     <defName>FT_Make_RA_SplitUranium</defName>
     <label>Split uranium for Rimatomics company</label>
-    <description>Separate the Uranium into enriched uranium and depleted uranium with the standard for Rimatomics companies.</description>
+    <description>Separate the uranium into enriched uranium and depleted uranium while adhering to Rimatomics standards.</description>
     <jobString>Spliting uranium.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -119,7 +119,7 @@
   <RecipeDef>
     <defName>FT_Make_SplitUranium</defName>
     <label>Split uranium</label>
-    <description>Separate the Uranium into enriched uranium and depleted uranium.</description>
+    <description>Split and refine semi-processed uraniun product into enriched uranium and depleted uranium.</description>
     <jobString>Spliting uranium.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
@@ -156,8 +156,8 @@
 
   <ThingDef ParentName="ResourceBase">
     <defName>FT_EnrichedUranium</defName>
-    <label>Enriched Uranium</label>
-    <description>a highly enriched nuclear-weapon-grade uranium that can be made into a nuclear warhead, a common weapon in Mid-world comparable to an anti-gram warhead.</description>
+    <label>enriched uranium</label>
+    <description>A highly enriched weapons-grade uranium that can be used for fission-type nuclear warhead, a weapon commonly used in midworlds, comparable to an antigrain warhead.</description>
     <graphicData>
       <texPath>FT_NuclearDawn/FT_EnrichedUranium</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

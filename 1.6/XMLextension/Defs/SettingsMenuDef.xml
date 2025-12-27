@@ -14,15 +14,20 @@
 				<label>Remove nuclear launcher</label>
 				<defaultValue>false</defaultValue>
 			</li>
+			<li Class="XmlExtensions.Setting.Text">
+				<text>Only removes the nuclear launcher. Nuclear shells still remain.</text>
+				<anchor>Left</anchor>
+			</li>
 			<li Class="XmlExtensions.Setting.Checkbox">
 				<key>AdjustNuclearExplosion</key>
-				<label>nuclear explosion from a peaceful world, so the impact side-effect will lesser.</label>
+				<label>Nerf nuclear weapons aftermath effects</label>
 				<defaultValue>false</defaultValue>
 			</li>	
 			<li Class="XmlExtensions.Setting.Text">
-				<text>even with nuclear launcher removed, you can still using mortar nuke...and so did enemy.</text>
-				<anchor>Middle</anchor>
+				<text>Lessens the adverse effects caused by nuclear explosions.</text>
+				<anchor>Left</anchor>
 			</li>
+
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 </Defs>
