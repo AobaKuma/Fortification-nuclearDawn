@@ -219,7 +219,6 @@
 		<minifiedDef />
 		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
 		<comps>
-			<li Class="CompProperties_Breakdownable" />
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
 				<heatPerSecond>10</heatPerSecond>
